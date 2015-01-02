@@ -10,7 +10,7 @@ import org.seasar.junitcdi.core.runner.CDI;
 @RunWith(CDI.class)
 public abstract class ContainerTestCase extends PlainTestCase {
 
-    // TODO jflute test: derby CDI transaction
+    // TODO jflute test: Derby, CDI transaction
     //// ===================================================================================
     ////                                                                           Attribute
     ////                                                                           =========
