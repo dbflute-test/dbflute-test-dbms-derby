@@ -19,7 +19,8 @@ import org.junit.Test;
  * CDI tests under JavaSE environment.
  *
  * @author taktos
- * @see http://junitcdi.sandbox.seasar.org/
+ * @author jflute
+ * @see "http://junitcdi.sandbox.seasar.org/"
  */
 public class WxCDITest extends ContainerTestCase {
 
