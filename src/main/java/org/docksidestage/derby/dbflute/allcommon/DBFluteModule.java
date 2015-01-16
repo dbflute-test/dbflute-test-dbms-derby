@@ -259,11 +259,7 @@ public class DBFluteModule implements Extension {
             return instance;
         }
 
-        /**
-         * Bean customization point.
-         * @param instance
-         */
-        protected void postInject(final T instance) {
+        protected void postInject(final T instance) { // bean customization point
         }
 
         @Override
@@ -332,19 +328,10 @@ public class DBFluteModule implements Extension {
     // ===================================================================================
     //                                                                       Behavior Bean
     //                                                                       =============
-    /**
-     * New behavior-bean instance.
-     * @param <BEHAVIOR> The type of behavior.
-     * @return Behavior-bean. (NotNull)
-     */
     public <BEHAVIOR extends AbstractBehaviorReadable<?, ?>> BehaviorBean<BEHAVIOR> newBehaviorBean(final BeanManager beanManager, final Class<BEHAVIOR> beanClass) {
         return new BehaviorBean<BEHAVIOR>(beanManager, beanClass);
     }
 
-    /**
-     * Behavior implementation of {@link Bean}.
-     * @param <BEHAVIOR> The type of behavior.
-     */
     public class BehaviorBean<BEHAVIOR extends AbstractBehaviorReadable<?, ?>> extends DBFluteBean<BEHAVIOR> {
         protected final BeanManager beanManager;
 
