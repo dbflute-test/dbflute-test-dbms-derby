@@ -5,7 +5,7 @@
     <table name="MEMBER" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column autoIncrement="true" comment="" dbType="INTEGER"
             default="GENERATED_BY_DEFAULT" javaType="Integer"
-            name="MEMBER_ID" pkName="SQL150116225251050" pkPosition="1"
+            name="MEMBER_ID" pkName="SQL150201210926670" pkPosition="1"
             primaryKey="true" required="true" size="10" type="INTEGER"/>
         <column comment="" dbType="VARCHAR" javaType="String"
             name="MEMBER_NAME" required="true" size="200" type="VARCHAR"/>
@@ -34,7 +34,7 @@
             foreignTable="MEMBER_STATUS" name="FK_MEMBER_MEMBER_STATUS">
             <reference foreign="MEMBER_STATUS_CODE" local="MEMBER_STATUS_CODE"/>
         </foreign-key>
-        <unique name="SQL150116225251421">
+        <unique name="SQL150201210927370">
             <unique-column name="MEMBER_ACCOUNT" position="1"/>
         </unique>
         <index name="IX_MEMBER_FORMALIZED_DATETIME">
@@ -43,14 +43,14 @@
         <index name="IX_MEMBER_MEMBER_NAME">
             <index-column name="MEMBER_NAME" position="1"/>
         </index>
-        <index name="SQL150116225251270">
+        <index name="SQL150201210927090">
             <index-column name="MEMBER_STATUS_CODE" position="1"/>
         </index>
     </table>
     <table name="MEMBER_ADDRESS" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column autoIncrement="true" comment="" dbType="INTEGER"
             default="GENERATED_BY_DEFAULT" javaType="Integer"
-            name="MEMBER_ADDRESS_ID" pkName="SQL150116225251080"
+            name="MEMBER_ADDRESS_ID" pkName="SQL150201210926720"
             pkPosition="1" primaryKey="true" required="true" size="10" type="INTEGER"/>
         <column comment="" dbType="INTEGER" javaType="Integer"
             name="MEMBER_ID" required="true" size="10" type="INTEGER"/>
@@ -80,21 +80,21 @@
         <foreign-key foreignSchema="MAIHAMADB" foreignTable="REGION" name="FK_MEMBER_ADDRESS_REGION">
             <reference foreign="REGION_ID" local="REGION_ID"/>
         </foreign-key>
-        <unique name="SQL150116225251430">
+        <unique name="SQL150201210927390">
             <unique-column name="MEMBER_ID" position="1"/>
             <unique-column name="VALID_BEGIN_DATE" position="2"/>
         </unique>
-        <index name="SQL150116225251280">
+        <index name="SQL150201210927110">
             <index-column name="MEMBER_ID" position="1"/>
         </index>
-        <index name="SQL150116225251300">
+        <index name="SQL150201210927120">
             <index-column name="REGION_ID" position="1"/>
         </index>
     </table>
     <table name="MEMBER_FOLLOWING" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column autoIncrement="true" comment="" dbType="BIGINT"
             default="GENERATED_BY_DEFAULT" javaType="Long"
-            name="MEMBER_FOLLOWING_ID" pkName="SQL150116225251100"
+            name="MEMBER_FOLLOWING_ID" pkName="SQL150201210926740"
             pkPosition="1" primaryKey="true" required="true" size="19" type="BIGINT"/>
         <column comment="" dbType="INTEGER" javaType="Integer"
             name="MY_MEMBER_ID" required="true" size="10" type="INTEGER"/>
@@ -109,7 +109,7 @@
         <foreign-key foreignSchema="MAIHAMADB" foreignTable="MEMBER" name="FK_MEMBER_FOLLOWING_YOUR_MEMBER">
             <reference foreign="MEMBER_ID" local="YOUR_MEMBER_ID"/>
         </foreign-key>
-        <unique name="SQL150116225251440">
+        <unique name="SQL150201210927410">
             <unique-column name="MY_MEMBER_ID" position="1"/>
             <unique-column name="YOUR_MEMBER_ID" position="2"/>
         </unique>
@@ -120,17 +120,17 @@
             <index-column name="YOUR_MEMBER_ID" position="1"/>
             <index-column name="MY_MEMBER_ID" position="2"/>
         </index>
-        <index name="SQL150116225251310">
+        <index name="SQL150201210927130">
             <index-column name="MY_MEMBER_ID" position="1"/>
         </index>
-        <index name="SQL150116225251320">
+        <index name="SQL150201210927150">
             <index-column name="YOUR_MEMBER_ID" position="1"/>
         </index>
     </table>
     <table name="MEMBER_LOGIN" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column autoIncrement="true" comment="" dbType="BIGINT"
             default="GENERATED_BY_DEFAULT" javaType="Long"
-            name="MEMBER_LOGIN_ID" pkName="SQL150116225251110"
+            name="MEMBER_LOGIN_ID" pkName="SQL150201210926770"
             pkPosition="1" primaryKey="true" required="true" size="19" type="BIGINT"/>
         <column comment="" dbType="INTEGER" javaType="Integer"
             name="MEMBER_ID" required="true" size="10" type="INTEGER"/>
@@ -148,23 +148,23 @@
         <foreign-key foreignSchema="MAIHAMADB" foreignTable="MEMBER" name="FK_MEMBER_LOGIN_MEMBER">
             <reference foreign="MEMBER_ID" local="MEMBER_ID"/>
         </foreign-key>
-        <unique name="SQL150116225251441">
+        <unique name="SQL150201210927420">
             <unique-column name="MEMBER_ID" position="1"/>
             <unique-column name="LOGIN_DATETIME" position="2"/>
         </unique>
         <index name="IX_MEMBER_LOGIN_DATETIME">
             <index-column name="LOGIN_DATETIME" position="1"/>
         </index>
-        <index name="SQL150116225251321">
+        <index name="SQL150201210927160">
             <index-column name="LOGIN_MEMBER_STATUS_CODE" position="1"/>
         </index>
-        <index name="SQL150116225251330">
+        <index name="SQL150201210927180">
             <index-column name="MEMBER_ID" position="1"/>
         </index>
     </table>
     <table name="MEMBER_SECURITY" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column comment="" dbType="INTEGER" javaType="Integer"
-            name="MEMBER_ID" pkName="SQL150116225251130" pkPosition="1"
+            name="MEMBER_ID" pkName="SQL150201210926800" pkPosition="1"
             primaryKey="true" required="true" size="10" type="INTEGER"/>
         <column comment="" dbType="VARCHAR" javaType="String"
             name="LOGIN_PASSWORD" required="true" size="50" type="VARCHAR"/>
@@ -189,14 +189,14 @@
         <foreign-key foreignSchema="MAIHAMADB" foreignTable="MEMBER" name="FK_MEMBER_SECURITY_MEMBER">
             <reference foreign="MEMBER_ID" local="MEMBER_ID"/>
         </foreign-key>
-        <index name="SQL150116225251360">
+        <index name="SQL150201210927270">
             <index-column name="MEMBER_ID" position="1"/>
         </index>
     </table>
     <table name="MEMBER_SERVICE" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column autoIncrement="true" comment="" dbType="INTEGER"
             default="GENERATED_BY_DEFAULT" javaType="Integer"
-            name="MEMBER_SERVICE_ID" pkName="SQL150116225251140"
+            name="MEMBER_SERVICE_ID" pkName="SQL150201210926830"
             pkPosition="1" primaryKey="true" required="true" size="10" type="INTEGER"/>
         <column comment="" dbType="INTEGER" javaType="Integer"
             name="MEMBER_ID" required="true" size="10" type="INTEGER"/>
@@ -223,22 +223,22 @@
             foreignTable="SERVICE_RANK" name="FK_MEMBER_SERVICE_SERVICE_RANK_CODE">
             <reference foreign="SERVICE_RANK_CODE" local="SERVICE_RANK_CODE"/>
         </foreign-key>
-        <unique name="SQL150116225251450">
+        <unique name="SQL150201210927450">
             <unique-column name="MEMBER_ID" position="1"/>
         </unique>
         <index name="IX_MEMBER_SERVICE_POINT_COUNT">
             <index-column name="SERVICE_POINT_COUNT" position="1"/>
         </index>
-        <index name="SQL150116225251340">
+        <index name="SQL150201210927210">
             <index-column name="MEMBER_ID" position="1"/>
         </index>
-        <index name="SQL150116225251350">
+        <index name="SQL150201210927240">
             <index-column name="SERVICE_RANK_CODE" position="1"/>
         </index>
     </table>
     <table name="MEMBER_STATUS" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column comment="" dbType="CHAR" javaType="String"
-            name="MEMBER_STATUS_CODE" pkName="SQL150116225251240"
+            name="MEMBER_STATUS_CODE" pkName="SQL150201210927020"
             pkPosition="1" primaryKey="true" required="true" size="3" type="CHAR"/>
         <column comment="" dbType="VARCHAR" javaType="String"
             name="MEMBER_STATUS_NAME" required="true" size="50" type="VARCHAR"/>
@@ -246,13 +246,13 @@
             name="DESCRIPTION" required="true" size="200" type="VARCHAR"/>
         <column comment="" dbType="INTEGER" javaType="Integer"
             name="DISPLAY_ORDER" required="true" size="10" type="INTEGER"/>
-        <unique name="SQL150116225251470">
+        <unique name="SQL150201210927521">
             <unique-column name="DISPLAY_ORDER" position="1"/>
         </unique>
     </table>
     <table name="MEMBER_WITHDRAWAL" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column comment="" dbType="INTEGER" javaType="Integer"
-            name="MEMBER_ID" pkName="SQL150116225251150" pkPosition="1"
+            name="MEMBER_ID" pkName="SQL150201210926840" pkPosition="1"
             primaryKey="true" required="true" size="10" type="INTEGER"/>
         <column comment="" dbType="CHAR" javaType="String"
             name="WITHDRAWAL_REASON_CODE" size="3" type="CHAR"/>
@@ -280,17 +280,17 @@
             foreignTable="WITHDRAWAL_REASON" name="FK_MEMBER_WITHDRAWAL_WITHDRAWAL_REASON">
             <reference foreign="WITHDRAWAL_REASON_CODE" local="WITHDRAWAL_REASON_CODE"/>
         </foreign-key>
-        <index name="SQL150116225251361">
+        <index name="SQL150201210927280">
             <index-column name="MEMBER_ID" position="1"/>
         </index>
-        <index name="SQL150116225251370">
+        <index name="SQL150201210927290">
             <index-column name="WITHDRAWAL_REASON_CODE" position="1"/>
         </index>
     </table>
     <table name="PRODUCT" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column autoIncrement="true" comment="" dbType="INTEGER"
             default="GENERATED_BY_DEFAULT" javaType="Integer"
-            name="PRODUCT_ID" pkName="SQL150116225251180" pkPosition="1"
+            name="PRODUCT_ID" pkName="SQL150201210926870" pkPosition="1"
             primaryKey="true" required="true" size="10" type="INTEGER"/>
         <column comment="" dbType="VARCHAR" javaType="String"
             name="PRODUCT_NAME" required="true" size="50" type="VARCHAR"/>
@@ -322,22 +322,22 @@
             foreignTable="PRODUCT_STATUS" name="FK_PRODUCT_PRODUCT_STATUS">
             <reference foreign="PRODUCT_STATUS_CODE" local="PRODUCT_STATUS_CODE"/>
         </foreign-key>
-        <unique name="SQL150116225251461">
+        <unique name="SQL150201210927520">
             <unique-column name="PRODUCT_HANDLE_CODE" position="1"/>
         </unique>
         <index name="IX_PRODUCT_PRODUCT_NAME">
             <index-column name="PRODUCT_NAME" position="1"/>
         </index>
-        <index name="SQL150116225251400">
+        <index name="SQL150201210927340">
             <index-column name="PRODUCT_CATEGORY_CODE" position="1"/>
         </index>
-        <index name="SQL150116225251401">
+        <index name="SQL150201210927341">
             <index-column name="PRODUCT_STATUS_CODE" position="1"/>
         </index>
     </table>
     <table name="PRODUCT_CATEGORY" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column comment="" dbType="CHAR" javaType="String"
-            name="PRODUCT_CATEGORY_CODE" pkName="SQL150116225251190"
+            name="PRODUCT_CATEGORY_CODE" pkName="SQL150201210926910"
             pkPosition="1" primaryKey="true" required="true" size="3" type="CHAR"/>
         <column comment="" dbType="VARCHAR" javaType="String"
             name="PRODUCT_CATEGORY_NAME" required="true" size="50" type="VARCHAR"/>
@@ -347,26 +347,26 @@
             foreignTable="PRODUCT_CATEGORY" name="FK_PRODUCT_CATEGORY_PARENT">
             <reference foreign="PRODUCT_CATEGORY_CODE" local="PARENT_CATEGORY_CODE"/>
         </foreign-key>
-        <index name="SQL150116225251420">
+        <index name="SQL150201210927350">
             <index-column name="PARENT_CATEGORY_CODE" position="1"/>
         </index>
     </table>
     <table name="PRODUCT_STATUS" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column comment="" dbType="CHAR" javaType="String"
-            name="PRODUCT_STATUS_CODE" pkName="SQL150116225251200"
+            name="PRODUCT_STATUS_CODE" pkName="SQL150201210926930"
             pkPosition="1" primaryKey="true" required="true" size="3" type="CHAR"/>
         <column comment="" dbType="VARCHAR" javaType="String"
             name="PRODUCT_STATUS_NAME" required="true" size="50" type="VARCHAR"/>
         <column comment="" dbType="INTEGER" javaType="Integer"
             name="DISPLAY_ORDER" required="true" size="10" type="INTEGER"/>
-        <unique name="SQL150116225251480">
+        <unique name="SQL150201210927540">
             <unique-column name="DISPLAY_ORDER" position="1"/>
         </unique>
     </table>
     <table name="PURCHASE" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column autoIncrement="true" comment="" dbType="BIGINT"
             default="GENERATED_BY_DEFAULT" javaType="Long"
-            name="PURCHASE_ID" pkName="SQL150116225251170"
+            name="PURCHASE_ID" pkName="SQL150201210926860"
             pkPosition="1" primaryKey="true" required="true" size="19" type="BIGINT"/>
         <column comment="" dbType="INTEGER" javaType="Integer"
             name="MEMBER_ID" required="true" size="10" type="INTEGER"/>
@@ -399,7 +399,7 @@
         <foreign-key foreignSchema="MAIHAMADB" foreignTable="PRODUCT" name="FK_PURCHASE_PRODUCT">
             <reference foreign="PRODUCT_ID" local="PRODUCT_ID"/>
         </foreign-key>
-        <unique name="SQL150116225251460">
+        <unique name="SQL150201210927500">
             <unique-column name="MEMBER_ID" position="1"/>
             <unique-column name="PRODUCT_ID" position="2"/>
             <unique-column name="PURCHASE_DATETIME" position="3"/>
@@ -415,23 +415,23 @@
             <index-column name="PRODUCT_ID" position="1"/>
             <index-column name="PURCHASE_DATETIME" position="2"/>
         </index>
-        <index name="SQL150116225251380">
+        <index name="SQL150201210927300">
             <index-column name="MEMBER_ID" position="1"/>
         </index>
-        <index name="SQL150116225251390">
+        <index name="SQL150201210927320">
             <index-column name="PRODUCT_ID" position="1"/>
         </index>
     </table>
     <table name="REGION" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column comment="" dbType="INTEGER" javaType="Integer"
-            name="REGION_ID" pkName="SQL150116225251210" pkPosition="1"
+            name="REGION_ID" pkName="SQL150201210926960" pkPosition="1"
             primaryKey="true" required="true" size="10" type="INTEGER"/>
         <column comment="" dbType="VARCHAR" javaType="String"
             name="REGION_NAME" required="true" size="50" type="VARCHAR"/>
     </table>
     <table name="SERVICE_RANK" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column comment="" dbType="CHAR" javaType="String"
-            name="SERVICE_RANK_CODE" pkName="SQL150116225251230"
+            name="SERVICE_RANK_CODE" pkName="SQL150201210926980"
             pkPosition="1" primaryKey="true" required="true" size="3" type="CHAR"/>
         <column comment="" dbType="VARCHAR" javaType="String"
             name="SERVICE_RANK_NAME" required="true" size="50" type="VARCHAR"/>
@@ -444,7 +444,7 @@
             name="DESCRIPTION" required="true" size="200" type="VARCHAR"/>
         <column comment="" dbType="INTEGER" javaType="Integer"
             name="DISPLAY_ORDER" required="true" size="10" type="INTEGER"/>
-        <unique name="SQL150116225251481">
+        <unique name="SQL150201210927550">
             <unique-column name="DISPLAY_ORDER" position="1"/>
         </unique>
     </table>
@@ -461,14 +461,14 @@
     </table>
     <table name="WITHDRAWAL_REASON" schema="maihamadb.MAIHAMADB" type="TABLE">
         <column comment="" dbType="CHAR" javaType="String"
-            name="WITHDRAWAL_REASON_CODE" pkName="SQL150116225251241"
+            name="WITHDRAWAL_REASON_CODE" pkName="SQL150201210927030"
             pkPosition="1" primaryKey="true" required="true" size="3" type="CHAR"/>
         <column comment="" dbType="CLOB" javaType="String"
             name="WITHDRAWAL_REASON_TEXT" required="true"
             size="2147483647" type="CLOB"/>
         <column comment="" dbType="INTEGER" javaType="Integer"
             name="DISPLAY_ORDER" required="true" size="10" type="INTEGER"/>
-        <unique name="SQL150116225251490">
+        <unique name="SQL150201210927560">
             <unique-column name="DISPLAY_ORDER" position="1"/>
         </unique>
     </table>
