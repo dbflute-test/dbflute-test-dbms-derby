@@ -13,11 +13,11 @@
 	<inceptionYear>2014</inceptionYear>
 
 	<properties>
-		<dbflute.version>1.1.0-RC1</dbflute.version>
+		<dbflute.version>1.1.0-sp1-RC1</dbflute.version>
 		<derby.jdbc.version>10.11.1.1</derby.jdbc.version>
 		<slf4j.version>1.6.1</slf4j.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<utflute.version>0.5.0-RC1</utflute.version>
+		<utflute.version>0.5.0-sp1</utflute.version>
 	</properties>
 
 	<licenses>
@@ -122,6 +122,14 @@
 				<configuration>
 					<workspace>${basedir}/..</workspace>
 					<downloadSources>true</downloadSources>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.dbflute</groupId>
+				<artifactId>dbflute-maven-plugin</artifactId>
+				<version>1.1.0-RC1</version>
+				<configuration>
+					<clientProject>maihamadb</clientProject>
 				</configuration>
 			</plugin>
 		</plugins>

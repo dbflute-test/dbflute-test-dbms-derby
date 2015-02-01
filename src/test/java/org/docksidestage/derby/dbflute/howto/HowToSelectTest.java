@@ -72,7 +72,7 @@ public class HowToSelectTest extends UnitContainerTestCase {
     // ===================================================================================
     //                                                                       Demonstration
     //                                                                       =============
-    // TODO jflute test: derby CDI test environment
+    // TODO jflute test: Derby, CDI test environment
     @Test
     @Transactional
     public void test_demo_EntitySelect() throws Exception {
@@ -249,7 +249,7 @@ public class HowToSelectTest extends UnitContainerTestCase {
         //  where dfrel_4.SERVICE_RANK_CODE = 'GLD'
     }
 
-    // TODO jflute test: derby CDI test environment
+    // TODO jflute test: Derby, CDI test environment
     //public void test_Query_ExistsReferrer() { // #one_to_many
     //    // ## Arrange ##
     //    // ## Act ##
@@ -715,7 +715,7 @@ public class HowToSelectTest extends UnitContainerTestCase {
     //    assertMarked("called");
     //}
 
-    // TODO jflute test: derby payment
+    // TODO jflute test: Derby, payment
     //// -----------------------------------------------------
     ////                                          LoadReferrer
     ////                                          ------------
@@ -770,7 +770,7 @@ public class HowToSelectTest extends UnitContainerTestCase {
     //    assertMarked("payment exists");
     //}
 
-    // TODO jflute test: derby outsideSql
+    // TODO jflute test: Derby, outsideSql
     //// ===================================================================================
     ////                                                                          OutsideSql
     ////                                                                          ==========

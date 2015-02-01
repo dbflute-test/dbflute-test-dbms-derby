@@ -44,7 +44,7 @@ public abstract class UnitContainerTestCase extends ContainerTestCase {
         deleteAll(MemberServiceBhv.class);
         deleteAll(MemberSecurityBhv.class);
         deleteAll(MemberWithdrawalBhv.class);
-        // TODO jflute test: derby payment
+        // TODO jflute test: Derby, payment
         //deleteAll(PurchasePaymentBhv.class);
         deleteAll(PurchaseBhv.class);
     }
