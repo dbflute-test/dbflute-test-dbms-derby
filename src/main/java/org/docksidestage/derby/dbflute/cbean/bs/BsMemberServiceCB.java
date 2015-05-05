@@ -270,7 +270,7 @@ public class BsMemberServiceCB extends AbstractConditionBean {
      */
     public MemberNss setupSelect_Member() {
         assertSetupSelectPurpose("member");
-        if (hasSpecifiedColumn()) { // if reverse call
+        if (hasSpecifiedLocalColumn()) {
             specify().columnMemberId();
         }
         doSetupSelect(() -> query().queryMember());
@@ -293,7 +293,7 @@ public class BsMemberServiceCB extends AbstractConditionBean {
      */
     public void setupSelect_ServiceRank() {
         assertSetupSelectPurpose("serviceRank");
-        if (hasSpecifiedColumn()) { // if reverse call
+        if (hasSpecifiedLocalColumn()) {
             specify().columnServiceRankCode();
         }
         doSetupSelect(() -> query().queryServiceRank());
@@ -335,8 +335,8 @@ public class BsMemberServiceCB extends AbstractConditionBean {
         return specify();
     }
 
-    public boolean hasSpecifiedColumn() {
-        return _specification != null && _specification.isAlreadySpecifiedRequiredColumn();
+    public boolean hasSpecifiedLocalColumn() {
+        return _specification != null && _specification.hasSpecifiedColumn();
     }
 
     public static class HpSpecification extends HpAbstractSpecification<MemberServiceCQ> {
