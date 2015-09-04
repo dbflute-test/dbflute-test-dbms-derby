@@ -49,7 +49,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * Equal(=). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_LOGIN_ID: {PK, ID, NotNull, BIGINT(19)}
-     * @param memberLoginId The value of memberLoginId as equal. (NullAllowed: if null, no condition)
+     * @param memberLoginId The value of memberLoginId as equal. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberLoginId_Equal(Long memberLoginId) {
         doSetMemberLoginId_Equal(memberLoginId);
@@ -62,7 +62,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * NotEqual(&lt;&gt;). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_LOGIN_ID: {PK, ID, NotNull, BIGINT(19)}
-     * @param memberLoginId The value of memberLoginId as notEqual. (NullAllowed: if null, no condition)
+     * @param memberLoginId The value of memberLoginId as notEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberLoginId_NotEqual(Long memberLoginId) {
         doSetMemberLoginId_NotEqual(memberLoginId);
@@ -75,7 +75,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * GreaterThan(&gt;). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_LOGIN_ID: {PK, ID, NotNull, BIGINT(19)}
-     * @param memberLoginId The value of memberLoginId as greaterThan. (NullAllowed: if null, no condition)
+     * @param memberLoginId The value of memberLoginId as greaterThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberLoginId_GreaterThan(Long memberLoginId) {
         regMemberLoginId(CK_GT, memberLoginId);
@@ -84,7 +84,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * LessThan(&lt;). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_LOGIN_ID: {PK, ID, NotNull, BIGINT(19)}
-     * @param memberLoginId The value of memberLoginId as lessThan. (NullAllowed: if null, no condition)
+     * @param memberLoginId The value of memberLoginId as lessThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberLoginId_LessThan(Long memberLoginId) {
         regMemberLoginId(CK_LT, memberLoginId);
@@ -93,7 +93,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * GreaterEqual(&gt;=). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_LOGIN_ID: {PK, ID, NotNull, BIGINT(19)}
-     * @param memberLoginId The value of memberLoginId as greaterEqual. (NullAllowed: if null, no condition)
+     * @param memberLoginId The value of memberLoginId as greaterEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberLoginId_GreaterEqual(Long memberLoginId) {
         regMemberLoginId(CK_GE, memberLoginId);
@@ -102,7 +102,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * LessEqual(&lt;=). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_LOGIN_ID: {PK, ID, NotNull, BIGINT(19)}
-     * @param memberLoginId The value of memberLoginId as lessEqual. (NullAllowed: if null, no condition)
+     * @param memberLoginId The value of memberLoginId as lessEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberLoginId_LessEqual(Long memberLoginId) {
         regMemberLoginId(CK_LE, memberLoginId);
@@ -178,7 +178,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * Equal(=). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_ID: {UQ+, IX, NotNull, INTEGER(10), FK to MEMBER}
-     * @param memberId The value of memberId as equal. (NullAllowed: if null, no condition)
+     * @param memberId The value of memberId as equal. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberId_Equal(Integer memberId) {
         doSetMemberId_Equal(memberId);
@@ -191,7 +191,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * NotEqual(&lt;&gt;). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_ID: {UQ+, IX, NotNull, INTEGER(10), FK to MEMBER}
-     * @param memberId The value of memberId as notEqual. (NullAllowed: if null, no condition)
+     * @param memberId The value of memberId as notEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberId_NotEqual(Integer memberId) {
         doSetMemberId_NotEqual(memberId);
@@ -204,7 +204,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * GreaterThan(&gt;). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_ID: {UQ+, IX, NotNull, INTEGER(10), FK to MEMBER}
-     * @param memberId The value of memberId as greaterThan. (NullAllowed: if null, no condition)
+     * @param memberId The value of memberId as greaterThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberId_GreaterThan(Integer memberId) {
         regMemberId(CK_GT, memberId);
@@ -213,7 +213,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * LessThan(&lt;). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_ID: {UQ+, IX, NotNull, INTEGER(10), FK to MEMBER}
-     * @param memberId The value of memberId as lessThan. (NullAllowed: if null, no condition)
+     * @param memberId The value of memberId as lessThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberId_LessThan(Integer memberId) {
         regMemberId(CK_LT, memberId);
@@ -222,7 +222,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * GreaterEqual(&gt;=). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_ID: {UQ+, IX, NotNull, INTEGER(10), FK to MEMBER}
-     * @param memberId The value of memberId as greaterEqual. (NullAllowed: if null, no condition)
+     * @param memberId The value of memberId as greaterEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberId_GreaterEqual(Integer memberId) {
         regMemberId(CK_GE, memberId);
@@ -231,7 +231,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * LessEqual(&lt;=). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_ID: {UQ+, IX, NotNull, INTEGER(10), FK to MEMBER}
-     * @param memberId The value of memberId as lessEqual. (NullAllowed: if null, no condition)
+     * @param memberId The value of memberId as lessEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberId_LessEqual(Integer memberId) {
         regMemberId(CK_LE, memberId);
@@ -295,7 +295,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * Equal(=). And NullIgnored, OnlyOnceRegistered. <br>
      * LOGIN_DATETIME: {+UQ, IX, NotNull, TIMESTAMP(29, 9)}
-     * @param loginDatetime The value of loginDatetime as equal. (NullAllowed: if null, no condition)
+     * @param loginDatetime The value of loginDatetime as equal. (basically NotNull: error as default, or no condition as option)
      */
     public void setLoginDatetime_Equal(java.time.LocalDateTime loginDatetime) {
         regLoginDatetime(CK_EQ,  loginDatetime);
@@ -304,7 +304,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * GreaterThan(&gt;). And NullIgnored, OnlyOnceRegistered. <br>
      * LOGIN_DATETIME: {+UQ, IX, NotNull, TIMESTAMP(29, 9)}
-     * @param loginDatetime The value of loginDatetime as greaterThan. (NullAllowed: if null, no condition)
+     * @param loginDatetime The value of loginDatetime as greaterThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setLoginDatetime_GreaterThan(java.time.LocalDateTime loginDatetime) {
         regLoginDatetime(CK_GT,  loginDatetime);
@@ -313,7 +313,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * LessThan(&lt;). And NullIgnored, OnlyOnceRegistered. <br>
      * LOGIN_DATETIME: {+UQ, IX, NotNull, TIMESTAMP(29, 9)}
-     * @param loginDatetime The value of loginDatetime as lessThan. (NullAllowed: if null, no condition)
+     * @param loginDatetime The value of loginDatetime as lessThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setLoginDatetime_LessThan(java.time.LocalDateTime loginDatetime) {
         regLoginDatetime(CK_LT,  loginDatetime);
@@ -322,7 +322,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * GreaterEqual(&gt;=). And NullIgnored, OnlyOnceRegistered. <br>
      * LOGIN_DATETIME: {+UQ, IX, NotNull, TIMESTAMP(29, 9)}
-     * @param loginDatetime The value of loginDatetime as greaterEqual. (NullAllowed: if null, no condition)
+     * @param loginDatetime The value of loginDatetime as greaterEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setLoginDatetime_GreaterEqual(java.time.LocalDateTime loginDatetime) {
         regLoginDatetime(CK_GE,  loginDatetime);
@@ -331,7 +331,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * LessEqual(&lt;=). And NullIgnored, OnlyOnceRegistered. <br>
      * LOGIN_DATETIME: {+UQ, IX, NotNull, TIMESTAMP(29, 9)}
-     * @param loginDatetime The value of loginDatetime as lessEqual. (NullAllowed: if null, no condition)
+     * @param loginDatetime The value of loginDatetime as lessEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setLoginDatetime_LessEqual(java.time.LocalDateTime loginDatetime) {
         regLoginDatetime(CK_LE, loginDatetime);
@@ -370,7 +370,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * Equal(=). And NullIgnored, OnlyOnceRegistered. <br>
      * MOBILE_LOGIN_FLG: {NotNull, INTEGER(10), classification=Flg}
-     * @param mobileLoginFlg The value of mobileLoginFlg as equal. (NullAllowed: if null, no condition)
+     * @param mobileLoginFlg The value of mobileLoginFlg as equal. (basically NotNull: error as default, or no condition as option)
      */
     protected void setMobileLoginFlg_Equal(Integer mobileLoginFlg) {
         doSetMobileLoginFlg_Equal(mobileLoginFlg);
@@ -380,7 +380,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
      * Equal(=). As Flg. And NullIgnored, OnlyOnceRegistered. <br>
      * MOBILE_LOGIN_FLG: {NotNull, INTEGER(10), classification=Flg} <br>
      * general boolean classification for every flg-column
-     * @param cdef The instance of classification definition (as ENUM type). (NullAllowed: if null, no condition)
+     * @param cdef The instance of classification definition (as ENUM type). (basically NotNull: error as default, or no condition as option)
      */
     public void setMobileLoginFlg_Equal_AsFlg(CDef.Flg cdef) {
         doSetMobileLoginFlg_Equal(cTNum(cdef != null ? cdef.code() : null, Integer.class));
@@ -390,7 +390,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
      * Equal(=). As boolean for Flg. <br>
      * MOBILE_LOGIN_FLG: {NotNull, INTEGER(10), classification=Flg} <br>
      * general boolean classification for every flg-column
-     * @param determination The determination, true or false. (NullAllowed: if null, no condition)
+     * @param determination The determination, true or false. (basically NotNull: error as default, or no condition as option)
      */
     public void setMobileLoginFlg_Equal_AsBoolean(Boolean determination) {
         setMobileLoginFlg_Equal_AsFlg(CDef.Flg.codeOf(determination));
@@ -419,7 +419,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
     /**
      * NotEqual(&lt;&gt;). And NullIgnored, OnlyOnceRegistered. <br>
      * MOBILE_LOGIN_FLG: {NotNull, INTEGER(10), classification=Flg}
-     * @param mobileLoginFlg The value of mobileLoginFlg as notEqual. (NullAllowed: if null, no condition)
+     * @param mobileLoginFlg The value of mobileLoginFlg as notEqual. (basically NotNull: error as default, or no condition as option)
      */
     protected void setMobileLoginFlg_NotEqual(Integer mobileLoginFlg) {
         doSetMobileLoginFlg_NotEqual(mobileLoginFlg);
@@ -429,7 +429,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
      * NotEqual(&lt;&gt;). As Flg. And NullIgnored, OnlyOnceRegistered. <br>
      * MOBILE_LOGIN_FLG: {NotNull, INTEGER(10), classification=Flg} <br>
      * general boolean classification for every flg-column
-     * @param cdef The instance of classification definition (as ENUM type). (NullAllowed: if null, no condition)
+     * @param cdef The instance of classification definition (as ENUM type). (basically NotNull: error as default, or no condition as option)
      */
     public void setMobileLoginFlg_NotEqual_AsFlg(CDef.Flg cdef) {
         doSetMobileLoginFlg_NotEqual(cTNum(cdef != null ? cdef.code() : null, Integer.class));
@@ -517,7 +517,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
      * Equal(=). As MemberStatus. And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
      * LOGIN_MEMBER_STATUS_CODE: {IX, NotNull, CHAR(3), FK to MEMBER_STATUS, classification=MemberStatus} <br>
      * status of member from entry to withdrawal
-     * @param cdef The instance of classification definition (as ENUM type). (NullAllowed: if null, no condition)
+     * @param cdef The instance of classification definition (as ENUM type). (basically NotNull: error as default, or no condition as option)
      */
     public void setLoginMemberStatusCode_Equal_AsMemberStatus(CDef.MemberStatus cdef) {
         doSetLoginMemberStatusCode_Equal(cdef != null ? cdef.code() : null);
@@ -564,7 +564,7 @@ public abstract class AbstractBsMemberLoginCQ extends AbstractConditionQuery {
      * NotEqual(&lt;&gt;). As MemberStatus. And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
      * LOGIN_MEMBER_STATUS_CODE: {IX, NotNull, CHAR(3), FK to MEMBER_STATUS, classification=MemberStatus} <br>
      * status of member from entry to withdrawal
-     * @param cdef The instance of classification definition (as ENUM type). (NullAllowed: if null, no condition)
+     * @param cdef The instance of classification definition (as ENUM type). (basically NotNull: error as default, or no condition as option)
      */
     public void setLoginMemberStatusCode_NotEqual_AsMemberStatus(CDef.MemberStatus cdef) {
         doSetLoginMemberStatusCode_NotEqual(cdef != null ? cdef.code() : null);
