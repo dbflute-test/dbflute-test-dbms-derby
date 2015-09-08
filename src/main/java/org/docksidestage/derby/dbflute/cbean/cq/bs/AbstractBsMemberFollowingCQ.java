@@ -49,7 +49,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * Equal(=). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_FOLLOWING_ID: {PK, ID, NotNull, BIGINT(19)}
-     * @param memberFollowingId The value of memberFollowingId as equal. (NullAllowed: if null, no condition)
+     * @param memberFollowingId The value of memberFollowingId as equal. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberFollowingId_Equal(Long memberFollowingId) {
         doSetMemberFollowingId_Equal(memberFollowingId);
@@ -62,7 +62,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * NotEqual(&lt;&gt;). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_FOLLOWING_ID: {PK, ID, NotNull, BIGINT(19)}
-     * @param memberFollowingId The value of memberFollowingId as notEqual. (NullAllowed: if null, no condition)
+     * @param memberFollowingId The value of memberFollowingId as notEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberFollowingId_NotEqual(Long memberFollowingId) {
         doSetMemberFollowingId_NotEqual(memberFollowingId);
@@ -75,7 +75,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * GreaterThan(&gt;). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_FOLLOWING_ID: {PK, ID, NotNull, BIGINT(19)}
-     * @param memberFollowingId The value of memberFollowingId as greaterThan. (NullAllowed: if null, no condition)
+     * @param memberFollowingId The value of memberFollowingId as greaterThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberFollowingId_GreaterThan(Long memberFollowingId) {
         regMemberFollowingId(CK_GT, memberFollowingId);
@@ -84,7 +84,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * LessThan(&lt;). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_FOLLOWING_ID: {PK, ID, NotNull, BIGINT(19)}
-     * @param memberFollowingId The value of memberFollowingId as lessThan. (NullAllowed: if null, no condition)
+     * @param memberFollowingId The value of memberFollowingId as lessThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberFollowingId_LessThan(Long memberFollowingId) {
         regMemberFollowingId(CK_LT, memberFollowingId);
@@ -93,7 +93,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * GreaterEqual(&gt;=). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_FOLLOWING_ID: {PK, ID, NotNull, BIGINT(19)}
-     * @param memberFollowingId The value of memberFollowingId as greaterEqual. (NullAllowed: if null, no condition)
+     * @param memberFollowingId The value of memberFollowingId as greaterEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberFollowingId_GreaterEqual(Long memberFollowingId) {
         regMemberFollowingId(CK_GE, memberFollowingId);
@@ -102,7 +102,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * LessEqual(&lt;=). And NullIgnored, OnlyOnceRegistered. <br>
      * MEMBER_FOLLOWING_ID: {PK, ID, NotNull, BIGINT(19)}
-     * @param memberFollowingId The value of memberFollowingId as lessEqual. (NullAllowed: if null, no condition)
+     * @param memberFollowingId The value of memberFollowingId as lessEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setMemberFollowingId_LessEqual(Long memberFollowingId) {
         regMemberFollowingId(CK_LE, memberFollowingId);
@@ -178,7 +178,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * Equal(=). And NullIgnored, OnlyOnceRegistered. <br>
      * MY_MEMBER_ID: {UQ+, IX+, NotNull, INTEGER(10), FK to MEMBER}
-     * @param myMemberId The value of myMemberId as equal. (NullAllowed: if null, no condition)
+     * @param myMemberId The value of myMemberId as equal. (basically NotNull: error as default, or no condition as option)
      */
     public void setMyMemberId_Equal(Integer myMemberId) {
         doSetMyMemberId_Equal(myMemberId);
@@ -191,7 +191,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * NotEqual(&lt;&gt;). And NullIgnored, OnlyOnceRegistered. <br>
      * MY_MEMBER_ID: {UQ+, IX+, NotNull, INTEGER(10), FK to MEMBER}
-     * @param myMemberId The value of myMemberId as notEqual. (NullAllowed: if null, no condition)
+     * @param myMemberId The value of myMemberId as notEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setMyMemberId_NotEqual(Integer myMemberId) {
         doSetMyMemberId_NotEqual(myMemberId);
@@ -204,7 +204,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * GreaterThan(&gt;). And NullIgnored, OnlyOnceRegistered. <br>
      * MY_MEMBER_ID: {UQ+, IX+, NotNull, INTEGER(10), FK to MEMBER}
-     * @param myMemberId The value of myMemberId as greaterThan. (NullAllowed: if null, no condition)
+     * @param myMemberId The value of myMemberId as greaterThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setMyMemberId_GreaterThan(Integer myMemberId) {
         regMyMemberId(CK_GT, myMemberId);
@@ -213,7 +213,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * LessThan(&lt;). And NullIgnored, OnlyOnceRegistered. <br>
      * MY_MEMBER_ID: {UQ+, IX+, NotNull, INTEGER(10), FK to MEMBER}
-     * @param myMemberId The value of myMemberId as lessThan. (NullAllowed: if null, no condition)
+     * @param myMemberId The value of myMemberId as lessThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setMyMemberId_LessThan(Integer myMemberId) {
         regMyMemberId(CK_LT, myMemberId);
@@ -222,7 +222,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * GreaterEqual(&gt;=). And NullIgnored, OnlyOnceRegistered. <br>
      * MY_MEMBER_ID: {UQ+, IX+, NotNull, INTEGER(10), FK to MEMBER}
-     * @param myMemberId The value of myMemberId as greaterEqual. (NullAllowed: if null, no condition)
+     * @param myMemberId The value of myMemberId as greaterEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setMyMemberId_GreaterEqual(Integer myMemberId) {
         regMyMemberId(CK_GE, myMemberId);
@@ -231,7 +231,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * LessEqual(&lt;=). And NullIgnored, OnlyOnceRegistered. <br>
      * MY_MEMBER_ID: {UQ+, IX+, NotNull, INTEGER(10), FK to MEMBER}
-     * @param myMemberId The value of myMemberId as lessEqual. (NullAllowed: if null, no condition)
+     * @param myMemberId The value of myMemberId as lessEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setMyMemberId_LessEqual(Integer myMemberId) {
         regMyMemberId(CK_LE, myMemberId);
@@ -295,7 +295,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * Equal(=). And NullIgnored, OnlyOnceRegistered. <br>
      * YOUR_MEMBER_ID: {+UQ, IX+, NotNull, INTEGER(10), FK to MEMBER}
-     * @param yourMemberId The value of yourMemberId as equal. (NullAllowed: if null, no condition)
+     * @param yourMemberId The value of yourMemberId as equal. (basically NotNull: error as default, or no condition as option)
      */
     public void setYourMemberId_Equal(Integer yourMemberId) {
         doSetYourMemberId_Equal(yourMemberId);
@@ -308,7 +308,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * NotEqual(&lt;&gt;). And NullIgnored, OnlyOnceRegistered. <br>
      * YOUR_MEMBER_ID: {+UQ, IX+, NotNull, INTEGER(10), FK to MEMBER}
-     * @param yourMemberId The value of yourMemberId as notEqual. (NullAllowed: if null, no condition)
+     * @param yourMemberId The value of yourMemberId as notEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setYourMemberId_NotEqual(Integer yourMemberId) {
         doSetYourMemberId_NotEqual(yourMemberId);
@@ -321,7 +321,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * GreaterThan(&gt;). And NullIgnored, OnlyOnceRegistered. <br>
      * YOUR_MEMBER_ID: {+UQ, IX+, NotNull, INTEGER(10), FK to MEMBER}
-     * @param yourMemberId The value of yourMemberId as greaterThan. (NullAllowed: if null, no condition)
+     * @param yourMemberId The value of yourMemberId as greaterThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setYourMemberId_GreaterThan(Integer yourMemberId) {
         regYourMemberId(CK_GT, yourMemberId);
@@ -330,7 +330,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * LessThan(&lt;). And NullIgnored, OnlyOnceRegistered. <br>
      * YOUR_MEMBER_ID: {+UQ, IX+, NotNull, INTEGER(10), FK to MEMBER}
-     * @param yourMemberId The value of yourMemberId as lessThan. (NullAllowed: if null, no condition)
+     * @param yourMemberId The value of yourMemberId as lessThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setYourMemberId_LessThan(Integer yourMemberId) {
         regYourMemberId(CK_LT, yourMemberId);
@@ -339,7 +339,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * GreaterEqual(&gt;=). And NullIgnored, OnlyOnceRegistered. <br>
      * YOUR_MEMBER_ID: {+UQ, IX+, NotNull, INTEGER(10), FK to MEMBER}
-     * @param yourMemberId The value of yourMemberId as greaterEqual. (NullAllowed: if null, no condition)
+     * @param yourMemberId The value of yourMemberId as greaterEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setYourMemberId_GreaterEqual(Integer yourMemberId) {
         regYourMemberId(CK_GE, yourMemberId);
@@ -348,7 +348,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * LessEqual(&lt;=). And NullIgnored, OnlyOnceRegistered. <br>
      * YOUR_MEMBER_ID: {+UQ, IX+, NotNull, INTEGER(10), FK to MEMBER}
-     * @param yourMemberId The value of yourMemberId as lessEqual. (NullAllowed: if null, no condition)
+     * @param yourMemberId The value of yourMemberId as lessEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setYourMemberId_LessEqual(Integer yourMemberId) {
         regYourMemberId(CK_LE, yourMemberId);
@@ -412,7 +412,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * Equal(=). And NullIgnored, OnlyOnceRegistered. <br>
      * FOLLOW_DATETIME: {IX, NotNull, TIMESTAMP(29, 9)}
-     * @param followDatetime The value of followDatetime as equal. (NullAllowed: if null, no condition)
+     * @param followDatetime The value of followDatetime as equal. (basically NotNull: error as default, or no condition as option)
      */
     public void setFollowDatetime_Equal(java.time.LocalDateTime followDatetime) {
         regFollowDatetime(CK_EQ,  followDatetime);
@@ -421,7 +421,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * GreaterThan(&gt;). And NullIgnored, OnlyOnceRegistered. <br>
      * FOLLOW_DATETIME: {IX, NotNull, TIMESTAMP(29, 9)}
-     * @param followDatetime The value of followDatetime as greaterThan. (NullAllowed: if null, no condition)
+     * @param followDatetime The value of followDatetime as greaterThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setFollowDatetime_GreaterThan(java.time.LocalDateTime followDatetime) {
         regFollowDatetime(CK_GT,  followDatetime);
@@ -430,7 +430,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * LessThan(&lt;). And NullIgnored, OnlyOnceRegistered. <br>
      * FOLLOW_DATETIME: {IX, NotNull, TIMESTAMP(29, 9)}
-     * @param followDatetime The value of followDatetime as lessThan. (NullAllowed: if null, no condition)
+     * @param followDatetime The value of followDatetime as lessThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setFollowDatetime_LessThan(java.time.LocalDateTime followDatetime) {
         regFollowDatetime(CK_LT,  followDatetime);
@@ -439,7 +439,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * GreaterEqual(&gt;=). And NullIgnored, OnlyOnceRegistered. <br>
      * FOLLOW_DATETIME: {IX, NotNull, TIMESTAMP(29, 9)}
-     * @param followDatetime The value of followDatetime as greaterEqual. (NullAllowed: if null, no condition)
+     * @param followDatetime The value of followDatetime as greaterEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setFollowDatetime_GreaterEqual(java.time.LocalDateTime followDatetime) {
         regFollowDatetime(CK_GE,  followDatetime);
@@ -448,7 +448,7 @@ public abstract class AbstractBsMemberFollowingCQ extends AbstractConditionQuery
     /**
      * LessEqual(&lt;=). And NullIgnored, OnlyOnceRegistered. <br>
      * FOLLOW_DATETIME: {IX, NotNull, TIMESTAMP(29, 9)}
-     * @param followDatetime The value of followDatetime as lessEqual. (NullAllowed: if null, no condition)
+     * @param followDatetime The value of followDatetime as lessEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setFollowDatetime_LessEqual(java.time.LocalDateTime followDatetime) {
         regFollowDatetime(CK_LE, followDatetime);
