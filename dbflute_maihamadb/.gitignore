@@ -1,9 +1,2 @@
-/target
-/bin
-/.idea
-/*.iml
-/*.epoch
-/tm.out
-/tm.out.*
-/tm*.log
-/derby.log
+/output/doc/*.html
+/schema/*.xml
