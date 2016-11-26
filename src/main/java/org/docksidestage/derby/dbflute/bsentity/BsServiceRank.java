@@ -18,31 +18,31 @@ import org.docksidestage.derby.dbflute.exentity.*;
  * <pre>
  * [primary-key]
  *     SERVICE_RANK_CODE
- * 
+ *
  * [column]
  *     SERVICE_RANK_CODE, SERVICE_RANK_NAME, SERVICE_POINT_INCIDENCE, NEW_ACCEPTABLE_FLG, DESCRIPTION, DISPLAY_ORDER
- * 
+ *
  * [sequence]
  *     
- * 
+ *
  * [identity]
  *     
- * 
+ *
  * [version-no]
  *     
- * 
+ *
  * [foreign table]
  *     
- * 
+ *
  * [referrer table]
  *     MEMBER_SERVICE
- * 
+ *
  * [foreign property]
  *     
- * 
+ *
  * [referrer property]
  *     memberServiceList
- * 
+ *
  * [get/set template]
  * /= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
  * String serviceRankCode = entity.getServiceRankCode();
@@ -364,7 +364,7 @@ public abstract class BsServiceRank extends AbstractEntity implements DomainEnti
         _memberServiceList = memberServiceList;
     }
 
-    protected <ELEMENT> List<ELEMENT> newReferrerList() {
+    protected <ELEMENT> List<ELEMENT> newReferrerList() { // overriding to import
         return new ArrayList<ELEMENT>();
     }
 
