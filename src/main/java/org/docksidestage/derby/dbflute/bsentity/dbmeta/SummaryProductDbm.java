@@ -49,8 +49,7 @@ public class SummaryProductDbm extends AbstractDBMeta {
         setupEpg(_epgMap, et -> ((SummaryProduct)et).getProductId(), (et, vl) -> ((SummaryProduct)et).setProductId(cti(vl)), "productId");
         setupEpg(_epgMap, et -> ((SummaryProduct)et).getProductName(), (et, vl) -> ((SummaryProduct)et).setProductName((String)vl), "productName");
         setupEpg(_epgMap, et -> ((SummaryProduct)et).getProductStatusCode(), (et, vl) -> {
-            ColumnInfo col = columnProductStatusCode();
-            CDef.ProductStatus cls = (CDef.ProductStatus)gcls(et, col, vl);
+            CDef.ProductStatus cls = (CDef.ProductStatus)gcls(et, columnProductStatusCode(), vl);
             if (cls != null) {
                 ((SummaryProduct)et).setProductStatusCodeAsProductStatus(cls);
             } else {
