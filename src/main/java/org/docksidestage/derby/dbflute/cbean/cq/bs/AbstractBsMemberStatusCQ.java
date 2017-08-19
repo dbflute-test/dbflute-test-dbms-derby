@@ -49,7 +49,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
     /**
      * Equal(=). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
      * MEMBER_STATUS_CODE: {PK, NotNull, CHAR(3), classification=MemberStatus}
-     * @param memberStatusCode The value of memberStatusCode as equal. (NullAllowed: if null (or empty), no condition)
+     * @param memberStatusCode The value of memberStatusCode as equal. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     protected void setMemberStatusCode_Equal(String memberStatusCode) {
         doSetMemberStatusCode_Equal(fRES(memberStatusCode));
@@ -96,7 +96,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
     /**
      * NotEqual(&lt;&gt;). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
      * MEMBER_STATUS_CODE: {PK, NotNull, CHAR(3), classification=MemberStatus}
-     * @param memberStatusCode The value of memberStatusCode as notEqual. (NullAllowed: if null (or empty), no condition)
+     * @param memberStatusCode The value of memberStatusCode as notEqual. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     protected void setMemberStatusCode_NotEqual(String memberStatusCode) {
         doSetMemberStatusCode_NotEqual(fRES(memberStatusCode));
@@ -143,7 +143,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
     /**
      * InScope {in ('a', 'b')}. And NullOrEmptyIgnored, NullOrEmptyElementIgnored, SeveralRegistered. <br>
      * MEMBER_STATUS_CODE: {PK, NotNull, CHAR(3), classification=MemberStatus}
-     * @param memberStatusCodeList The collection of memberStatusCode as inScope. (NullAllowed: if null (or empty), no condition)
+     * @param memberStatusCodeList The collection of memberStatusCode as inScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     protected void setMemberStatusCode_InScope(Collection<String> memberStatusCodeList) {
         doSetMemberStatusCode_InScope(memberStatusCodeList);
@@ -153,7 +153,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
      * InScope {in ('a', 'b')}. As MemberStatus. And NullOrEmptyIgnored, NullOrEmptyElementIgnored, SeveralRegistered. <br>
      * MEMBER_STATUS_CODE: {PK, NotNull, CHAR(3), classification=MemberStatus} <br>
      * status of member from entry to withdrawal
-     * @param cdefList The list of classification definition (as ENUM type). (NullAllowed: if null (or empty), no condition)
+     * @param cdefList The list of classification definition (as ENUM type). (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setMemberStatusCode_InScope_AsMemberStatus(Collection<CDef.MemberStatus> cdefList) {
         doSetMemberStatusCode_InScope(cTStrL(cdefList));
@@ -176,7 +176,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
     /**
      * NotInScope {not in ('a', 'b')}. And NullOrEmptyIgnored, NullOrEmptyElementIgnored, SeveralRegistered. <br>
      * MEMBER_STATUS_CODE: {PK, NotNull, CHAR(3), classification=MemberStatus}
-     * @param memberStatusCodeList The collection of memberStatusCode as notInScope. (NullAllowed: if null (or empty), no condition)
+     * @param memberStatusCodeList The collection of memberStatusCode as notInScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     protected void setMemberStatusCode_NotInScope(Collection<String> memberStatusCodeList) {
         doSetMemberStatusCode_NotInScope(memberStatusCodeList);
@@ -186,7 +186,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
      * NotInScope {not in ('a', 'b')}. As MemberStatus. And NullOrEmptyIgnored, NullOrEmptyElementIgnored, SeveralRegistered. <br>
      * MEMBER_STATUS_CODE: {PK, NotNull, CHAR(3), classification=MemberStatus} <br>
      * status of member from entry to withdrawal
-     * @param cdefList The list of classification definition (as ENUM type). (NullAllowed: if null (or empty), no condition)
+     * @param cdefList The list of classification definition (as ENUM type). (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setMemberStatusCode_NotInScope_AsMemberStatus(Collection<CDef.MemberStatus> cdefList) {
         doSetMemberStatusCode_NotInScope(cTStrL(cdefList));
@@ -360,7 +360,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
     /**
      * Equal(=). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
      * MEMBER_STATUS_NAME: {NotNull, VARCHAR(50)}
-     * @param memberStatusName The value of memberStatusName as equal. (NullAllowed: if null (or empty), no condition)
+     * @param memberStatusName The value of memberStatusName as equal. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setMemberStatusName_Equal(String memberStatusName) {
         doSetMemberStatusName_Equal(fRES(memberStatusName));
@@ -373,7 +373,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
     /**
      * NotEqual(&lt;&gt;). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
      * MEMBER_STATUS_NAME: {NotNull, VARCHAR(50)}
-     * @param memberStatusName The value of memberStatusName as notEqual. (NullAllowed: if null (or empty), no condition)
+     * @param memberStatusName The value of memberStatusName as notEqual. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setMemberStatusName_NotEqual(String memberStatusName) {
         doSetMemberStatusName_NotEqual(fRES(memberStatusName));
@@ -386,7 +386,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
     /**
      * InScope {in ('a', 'b')}. And NullOrEmptyIgnored, NullOrEmptyElementIgnored, SeveralRegistered. <br>
      * MEMBER_STATUS_NAME: {NotNull, VARCHAR(50)}
-     * @param memberStatusNameList The collection of memberStatusName as inScope. (NullAllowed: if null (or empty), no condition)
+     * @param memberStatusNameList The collection of memberStatusName as inScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setMemberStatusName_InScope(Collection<String> memberStatusNameList) {
         doSetMemberStatusName_InScope(memberStatusNameList);
@@ -399,7 +399,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
     /**
      * NotInScope {not in ('a', 'b')}. And NullOrEmptyIgnored, NullOrEmptyElementIgnored, SeveralRegistered. <br>
      * MEMBER_STATUS_NAME: {NotNull, VARCHAR(50)}
-     * @param memberStatusNameList The collection of memberStatusName as notInScope. (NullAllowed: if null (or empty), no condition)
+     * @param memberStatusNameList The collection of memberStatusName as notInScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setMemberStatusName_NotInScope(Collection<String> memberStatusNameList) {
         doSetMemberStatusName_NotInScope(memberStatusNameList);
@@ -413,7 +413,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
      * LikeSearch with various options. (versatile) {like '%xxx%' escape ...}. And NullOrEmptyIgnored, SeveralRegistered. <br>
      * MEMBER_STATUS_NAME: {NotNull, VARCHAR(50)} <br>
      * <pre>e.g. setMemberStatusName_LikeSearch("xxx", op <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> op.<span style="color: #CC4747">likeContain()</span>);</pre>
-     * @param memberStatusName The value of memberStatusName as likeSearch. (NullAllowed: if null (or empty), no condition)
+     * @param memberStatusName The value of memberStatusName as likeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param opLambda The callback for option of like-search. (NotNull)
      */
     public void setMemberStatusName_LikeSearch(String memberStatusName, ConditionOptionCall<LikeSearchOption> opLambda) {
@@ -424,7 +424,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
      * LikeSearch with various options. (versatile) {like '%xxx%' escape ...}. And NullOrEmptyIgnored, SeveralRegistered. <br>
      * MEMBER_STATUS_NAME: {NotNull, VARCHAR(50)} <br>
      * <pre>e.g. setMemberStatusName_LikeSearch("xxx", new <span style="color: #CC4747">LikeSearchOption</span>().likeContain());</pre>
-     * @param memberStatusName The value of memberStatusName as likeSearch. (NullAllowed: if null (or empty), no condition)
+     * @param memberStatusName The value of memberStatusName as likeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param likeSearchOption The option of like-search. (NotNull)
      */
     protected void setMemberStatusName_LikeSearch(String memberStatusName, LikeSearchOption likeSearchOption) {
@@ -435,7 +435,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
      * NotLikeSearch with various options. (versatile) {not like 'xxx%' escape ...} <br>
      * And NullOrEmptyIgnored, SeveralRegistered. <br>
      * MEMBER_STATUS_NAME: {NotNull, VARCHAR(50)}
-     * @param memberStatusName The value of memberStatusName as notLikeSearch. (NullAllowed: if null (or empty), no condition)
+     * @param memberStatusName The value of memberStatusName as notLikeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param opLambda The callback for option of like-search. (NotNull)
      */
     public void setMemberStatusName_NotLikeSearch(String memberStatusName, ConditionOptionCall<LikeSearchOption> opLambda) {
@@ -446,7 +446,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
      * NotLikeSearch with various options. (versatile) {not like 'xxx%' escape ...} <br>
      * And NullOrEmptyIgnored, SeveralRegistered. <br>
      * MEMBER_STATUS_NAME: {NotNull, VARCHAR(50)}
-     * @param memberStatusName The value of memberStatusName as notLikeSearch. (NullAllowed: if null (or empty), no condition)
+     * @param memberStatusName The value of memberStatusName as notLikeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param likeSearchOption The option of not-like-search. (NotNull)
      */
     protected void setMemberStatusName_NotLikeSearch(String memberStatusName, LikeSearchOption likeSearchOption) {
@@ -459,7 +459,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
     /**
      * Equal(=). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
      * DESCRIPTION: {NotNull, VARCHAR(200)}
-     * @param description The value of description as equal. (NullAllowed: if null (or empty), no condition)
+     * @param description The value of description as equal. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setDescription_Equal(String description) {
         doSetDescription_Equal(fRES(description));
@@ -472,7 +472,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
     /**
      * NotEqual(&lt;&gt;). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
      * DESCRIPTION: {NotNull, VARCHAR(200)}
-     * @param description The value of description as notEqual. (NullAllowed: if null (or empty), no condition)
+     * @param description The value of description as notEqual. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setDescription_NotEqual(String description) {
         doSetDescription_NotEqual(fRES(description));
@@ -485,7 +485,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
     /**
      * InScope {in ('a', 'b')}. And NullOrEmptyIgnored, NullOrEmptyElementIgnored, SeveralRegistered. <br>
      * DESCRIPTION: {NotNull, VARCHAR(200)}
-     * @param descriptionList The collection of description as inScope. (NullAllowed: if null (or empty), no condition)
+     * @param descriptionList The collection of description as inScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setDescription_InScope(Collection<String> descriptionList) {
         doSetDescription_InScope(descriptionList);
@@ -498,7 +498,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
     /**
      * NotInScope {not in ('a', 'b')}. And NullOrEmptyIgnored, NullOrEmptyElementIgnored, SeveralRegistered. <br>
      * DESCRIPTION: {NotNull, VARCHAR(200)}
-     * @param descriptionList The collection of description as notInScope. (NullAllowed: if null (or empty), no condition)
+     * @param descriptionList The collection of description as notInScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setDescription_NotInScope(Collection<String> descriptionList) {
         doSetDescription_NotInScope(descriptionList);
@@ -512,7 +512,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
      * LikeSearch with various options. (versatile) {like '%xxx%' escape ...}. And NullOrEmptyIgnored, SeveralRegistered. <br>
      * DESCRIPTION: {NotNull, VARCHAR(200)} <br>
      * <pre>e.g. setDescription_LikeSearch("xxx", op <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> op.<span style="color: #CC4747">likeContain()</span>);</pre>
-     * @param description The value of description as likeSearch. (NullAllowed: if null (or empty), no condition)
+     * @param description The value of description as likeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param opLambda The callback for option of like-search. (NotNull)
      */
     public void setDescription_LikeSearch(String description, ConditionOptionCall<LikeSearchOption> opLambda) {
@@ -523,7 +523,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
      * LikeSearch with various options. (versatile) {like '%xxx%' escape ...}. And NullOrEmptyIgnored, SeveralRegistered. <br>
      * DESCRIPTION: {NotNull, VARCHAR(200)} <br>
      * <pre>e.g. setDescription_LikeSearch("xxx", new <span style="color: #CC4747">LikeSearchOption</span>().likeContain());</pre>
-     * @param description The value of description as likeSearch. (NullAllowed: if null (or empty), no condition)
+     * @param description The value of description as likeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param likeSearchOption The option of like-search. (NotNull)
      */
     protected void setDescription_LikeSearch(String description, LikeSearchOption likeSearchOption) {
@@ -534,7 +534,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
      * NotLikeSearch with various options. (versatile) {not like 'xxx%' escape ...} <br>
      * And NullOrEmptyIgnored, SeveralRegistered. <br>
      * DESCRIPTION: {NotNull, VARCHAR(200)}
-     * @param description The value of description as notLikeSearch. (NullAllowed: if null (or empty), no condition)
+     * @param description The value of description as notLikeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param opLambda The callback for option of like-search. (NotNull)
      */
     public void setDescription_NotLikeSearch(String description, ConditionOptionCall<LikeSearchOption> opLambda) {
@@ -545,7 +545,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
      * NotLikeSearch with various options. (versatile) {not like 'xxx%' escape ...} <br>
      * And NullOrEmptyIgnored, SeveralRegistered. <br>
      * DESCRIPTION: {NotNull, VARCHAR(200)}
-     * @param description The value of description as notLikeSearch. (NullAllowed: if null (or empty), no condition)
+     * @param description The value of description as notLikeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param likeSearchOption The option of not-like-search. (NotNull)
      */
     protected void setDescription_NotLikeSearch(String description, LikeSearchOption likeSearchOption) {
@@ -622,8 +622,8 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
      * {(default) minNumber &lt;= column &lt;= maxNumber} <br>
      * And NullIgnored, OnlyOnceRegistered. <br>
      * DISPLAY_ORDER: {UQ, NotNull, INTEGER(10)}
-     * @param minNumber The min number of displayOrder. (NullAllowed: if null, no from-condition)
-     * @param maxNumber The max number of displayOrder. (NullAllowed: if null, no to-condition)
+     * @param minNumber The min number of displayOrder. (basically NotNull: if op.allowOneSide(), null allowed)
+     * @param maxNumber The max number of displayOrder. (basically NotNull: if op.allowOneSide(), null allowed)
      * @param opLambda The callback for option of range-of. (NotNull)
      */
     public void setDisplayOrder_RangeOf(Integer minNumber, Integer maxNumber, ConditionOptionCall<RangeOfOption> opLambda) {
@@ -635,8 +635,8 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
      * {(default) minNumber &lt;= column &lt;= maxNumber} <br>
      * And NullIgnored, OnlyOnceRegistered. <br>
      * DISPLAY_ORDER: {UQ, NotNull, INTEGER(10)}
-     * @param minNumber The min number of displayOrder. (NullAllowed: if null, no from-condition)
-     * @param maxNumber The max number of displayOrder. (NullAllowed: if null, no to-condition)
+     * @param minNumber The min number of displayOrder. (basically NotNull: if op.allowOneSide(), null allowed)
+     * @param maxNumber The max number of displayOrder. (basically NotNull: if op.allowOneSide(), null allowed)
      * @param rangeOfOption The option of range-of. (NotNull)
      */
     protected void setDisplayOrder_RangeOf(Integer minNumber, Integer maxNumber, RangeOfOption rangeOfOption) {
@@ -646,7 +646,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
     /**
      * InScope {in (1, 2)}. And NullIgnored, NullElementIgnored, SeveralRegistered. <br>
      * DISPLAY_ORDER: {UQ, NotNull, INTEGER(10)}
-     * @param displayOrderList The collection of displayOrder as inScope. (NullAllowed: if null (or empty), no condition)
+     * @param displayOrderList The collection of displayOrder as inScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setDisplayOrder_InScope(Collection<Integer> displayOrderList) {
         doSetDisplayOrder_InScope(displayOrderList);
@@ -659,7 +659,7 @@ public abstract class AbstractBsMemberStatusCQ extends AbstractConditionQuery {
     /**
      * NotInScope {not in (1, 2)}. And NullIgnored, NullElementIgnored, SeveralRegistered. <br>
      * DISPLAY_ORDER: {UQ, NotNull, INTEGER(10)}
-     * @param displayOrderList The collection of displayOrder as notInScope. (NullAllowed: if null (or empty), no condition)
+     * @param displayOrderList The collection of displayOrder as notInScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setDisplayOrder_NotInScope(Collection<Integer> displayOrderList) {
         doSetDisplayOrder_NotInScope(displayOrderList);
