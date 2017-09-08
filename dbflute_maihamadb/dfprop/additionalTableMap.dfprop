@@ -27,13 +27,14 @@
 # *The line that starts with '#' means comment-out.
 #
 map:{
-    #; FOO_TABLE = map:{
+    #; SEA = map:{
     #    ; columnMap = map:{
-    #        FOO_ID = map:{ type = INTEGER ; dbType = INTEGER
-    #                     ; required = true ; primaryKey = true ; autoIncrement = true
-    #                 }
-    #        FOO_NAME = map:{ type = VARCHAR ; required = true ; size = 123 }
-    #        FOO_DATE = map:{ type = DATE }
+    #        ; SEA_ID = map:{
+    #            ; type = INTEGER ; dbType = INTEGER
+    #            ; required = true ; primaryKey = true ; autoIncrement = true
+    #        }
+    #        ; SEA_NAME = map:{ type = VARCHAR ; required = true ; size = 123 }
+    #        ; SEA_DATE = map:{ type = DATE }
     #    }
     #}
 }
