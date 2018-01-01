@@ -763,7 +763,7 @@ public class DBFluteConfig {
     //                                                                          ==========
     /**
      * Register the basic value type. <br>
-     * This setting is shared per DBMS in the same class loader. 
+     * This setting is shared per DBMS in the same class loader.
      * @param keyType The type as key. (NotNull)
      * @param valueType The basic value type. (NotNull)
      */

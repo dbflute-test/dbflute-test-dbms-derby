@@ -82,7 +82,7 @@ public class BsMemberFollowingCQ extends AbstractBsMemberFollowingCQ {
       return _memberFollowingId; }
     protected ConditionValue xgetCValueMemberFollowingId() { return xdfgetMemberFollowingId(); }
 
-    /** 
+    /**
      * Add order-by as ascend. <br>
      * MEMBER_FOLLOWING_ID: {PK, ID, NotNull, BIGINT(19)}
      * @return this. (NotNull)
@@ -102,7 +102,7 @@ public class BsMemberFollowingCQ extends AbstractBsMemberFollowingCQ {
       return _myMemberId; }
     protected ConditionValue xgetCValueMyMemberId() { return xdfgetMyMemberId(); }
 
-    /** 
+    /**
      * Add order-by as ascend. <br>
      * MY_MEMBER_ID: {UQ+, IX+, NotNull, INTEGER(10), FK to MEMBER}
      * @return this. (NotNull)
@@ -122,7 +122,7 @@ public class BsMemberFollowingCQ extends AbstractBsMemberFollowingCQ {
       return _yourMemberId; }
     protected ConditionValue xgetCValueYourMemberId() { return xdfgetYourMemberId(); }
 
-    /** 
+    /**
      * Add order-by as ascend. <br>
      * YOUR_MEMBER_ID: {+UQ, IX+, NotNull, INTEGER(10), FK to MEMBER}
      * @return this. (NotNull)
@@ -142,7 +142,7 @@ public class BsMemberFollowingCQ extends AbstractBsMemberFollowingCQ {
       return _followDatetime; }
     protected ConditionValue xgetCValueFollowDatetime() { return xdfgetFollowDatetime(); }
 
-    /** 
+    /**
      * Add order-by as ascend. <br>
      * FOLLOW_DATETIME: {IX, NotNull, TIMESTAMP(29, 9)}
      * @return this. (NotNull)

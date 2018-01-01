@@ -82,7 +82,7 @@ public class BsMemberLoginCQ extends AbstractBsMemberLoginCQ {
       return _memberLoginId; }
     protected ConditionValue xgetCValueMemberLoginId() { return xdfgetMemberLoginId(); }
 
-    /** 
+    /**
      * Add order-by as ascend. <br>
      * MEMBER_LOGIN_ID: {PK, ID, NotNull, BIGINT(19)}
      * @return this. (NotNull)
@@ -102,7 +102,7 @@ public class BsMemberLoginCQ extends AbstractBsMemberLoginCQ {
       return _memberId; }
     protected ConditionValue xgetCValueMemberId() { return xdfgetMemberId(); }
 
-    /** 
+    /**
      * Add order-by as ascend. <br>
      * MEMBER_ID: {UQ+, IX, NotNull, INTEGER(10), FK to MEMBER}
      * @return this. (NotNull)
@@ -122,7 +122,7 @@ public class BsMemberLoginCQ extends AbstractBsMemberLoginCQ {
       return _loginDatetime; }
     protected ConditionValue xgetCValueLoginDatetime() { return xdfgetLoginDatetime(); }
 
-    /** 
+    /**
      * Add order-by as ascend. <br>
      * LOGIN_DATETIME: {+UQ, IX, NotNull, TIMESTAMP(29, 9)}
      * @return this. (NotNull)
@@ -142,7 +142,7 @@ public class BsMemberLoginCQ extends AbstractBsMemberLoginCQ {
       return _mobileLoginFlg; }
     protected ConditionValue xgetCValueMobileLoginFlg() { return xdfgetMobileLoginFlg(); }
 
-    /** 
+    /**
      * Add order-by as ascend. <br>
      * MOBILE_LOGIN_FLG: {NotNull, INTEGER(10), classification=Flg}
      * @return this. (NotNull)
@@ -162,7 +162,7 @@ public class BsMemberLoginCQ extends AbstractBsMemberLoginCQ {
       return _loginMemberStatusCode; }
     protected ConditionValue xgetCValueLoginMemberStatusCode() { return xdfgetLoginMemberStatusCode(); }
 
-    /** 
+    /**
      * Add order-by as ascend. <br>
      * LOGIN_MEMBER_STATUS_CODE: {IX, NotNull, CHAR(3), FK to MEMBER_STATUS, classification=MemberStatus}
      * @return this. (NotNull)
