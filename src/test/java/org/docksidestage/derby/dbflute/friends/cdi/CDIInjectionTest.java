@@ -1,4 +1,4 @@
-package org.docksidestage.derby.dbflute.whitebox.container;
+package org.docksidestage.derby.dbflute.friends.cdi;
 
 import java.util.List;
 import java.util.Set;
@@ -22,7 +22,7 @@ import org.junit.Test;
  * @author jflute
  * @see "http://junitcdi.sandbox.seasar.org/"
  */
-public class WxCDITest extends ContainerTestCase {
+public class CDIInjectionTest extends ContainerTestCase {
 
     @Inject
     private MemberBhv memberBhv;
