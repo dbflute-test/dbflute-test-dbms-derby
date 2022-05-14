@@ -1,8 +1,8 @@
 # /---------------------------------------------------------------------------
-# outsideSqlDefinitionMap: (NotRequired - Default map:{})
+# outsideSqlMap: (NotRequired - Default map:{})
 #
 # The various settings about outsideSql. 
-# 
+#
 # o isGenerateProcedureParameterBean: (NotRequired - Default false)
 # o isGenerateProcedureCustomizeEntity: (NotRequired - Default false)
 # o targetProcedureCatalogList: (NotRequired - Default list:{})
@@ -10,14 +10,14 @@
 # o targetProcedureNameList: (NotRequired - Default list:{})
 # o executionMetaProcedureNameList: (NotRequired - Default list:{})
 # o procedureSynonymHandlingType: (NotRequired - Default NONE)
-# o isRequiredSqlTitle: (NotRequired - Default false)
-# o isRequiredSqlDescription: (NotRequired - Default false)
+# o isRequiredSqlTitle: (NotRequired - Default true)
+# o isRequiredSqlDescription: (NotRequired - Default true)
 # o sqlFileEncoding: (NotRequired - Default 'UTF-8')
 # o sqlDirectory: (NotRequired - Default generateOutputDirectory & resourceOutputDirectory)
 # o sql2EntityOutputDirectory: (NotRequired - Default generateOutputDirectory)
 # o applicationOutsideSqlMap: (NotRequired - Default map:{})
 # o sqlPackage: (NotRequired - Default all packages)
-# 
+#
 # *The line that starts with '#' means comment-out.
 #
 map:{
@@ -26,9 +26,6 @@ map:{
     #   [true]
     #     The parameter beans for procedure are auto-generated.
     #     If you call the procedure from DBFlute, you should specify 'true'!
-    #
-    #   [false]
-    #     Non.
     #
     ; isGenerateProcedureParameterBean = false
     # - - - - - - - - - -/
@@ -42,9 +39,6 @@ map:{
     #     Target procedures are executed actually at Sql2Entity task.
     #     (because of getting from execution meta data (result set meta data))
     #     This property is valid only when isGenerateProcedureParameterBean is true.
-    #
-    #   [false]
-    #     Non.
     #
     ; isGenerateProcedureCustomizeEntity = false
     # - - - - - - - - - -/
@@ -61,7 +55,7 @@ map:{
     # o targetProcedureSchemaList: (NotRequired - Default list:{})
     #  You can specify target schema of generated parameter bean for procedure.
     #  This property is valid only when generateProcedureParameterBean is valid.
-    #  e.g. list:{PROCEDUREDB}
+    #   e.g. list:{PROCEDUREDB}
     #
     #; targetProcedureSchemaList = list:{FOO_SCHEMA ; prefix:FOO_ ; suffix:_FOO ; contain:_FOO_}
     # - - - - - - - - - -/
@@ -70,7 +64,11 @@ map:{
     # o targetProcedureNameList: (NotRequired - Default list:{})
     #  You can specify target name of generated parameter bean for procedure.
     #  This property is valid only when isGenerateProcedureParameterBean is valid.
-    #  e.g. list:{prefix:SP_}
+    #   e.g. list:{prefix:SP_}
+    #  And you can specify procedures through DB link.
+    #  This is treated as additional setting
+    #  so it is independent from specifications for main schema.
+    #   e.g. SP_FOO@NEXT_LINK (when DB link name is 'NEXT_LINK')  
     #
     #; targetProcedureNameList = list:{FOO_PROCEDURE ; prefix:FOO_ ; suffix:_FOO ; contain:_FOO_}
     # - - - - - - - - - -/
@@ -79,7 +77,7 @@ map:{
     # o executionMetaProcedureNameList: (NotRequired - Default list:{})
     #  You can specify target name of generated customize entity for procedure.
     #  This property is valid only when isGenerateProcedureCustomizeEntity is valid.
-    #  e.g. list:{prefix:SP_}
+    #   e.g. list:{prefix:SP_}
     #
     #; executionMetaProcedureNameList = list:{FOO_PROCEDURE ; prefix:FOO_ ; suffix:_FOO ; contain:_FOO_}
     # - - - - - - - - - -/
@@ -95,27 +93,21 @@ map:{
     # - - - - - - - - - -/
 
     # /- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    # o isRequiredSqlTitle: (NotRequired - Default false)
+    # o isRequiredSqlTitle: (NotRequired - Default true)
     #   [true]
     #     You should always write the title of outsideSql.
     #     If it doesn't exist, the OutsideSqlTest task fails.
     #
-    #   [false]
-    #     Non.
-    #
-    #; isRequiredSqlTitle = false
+    #; isRequiredSqlTitle = true
     # - - - - - - - - - -/
 
     # /- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    # o isRequiredSqlDescription: (NotRequired - Default false)
+    # o isRequiredSqlDescription: (NotRequired - Default true)
     #   [true]
     #     You should always write the description of outsideSql.
     #     If it doesn't exist, the OutsideSqlTest task fails.
     #
-    #   [false]
-    #     Non.
-    #
-    #; isRequiredSqlDescription = false
+    #; isRequiredSqlDescription = true
     # - - - - - - - - - -/
 
     # /- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

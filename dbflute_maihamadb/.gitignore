@@ -1,2 +1,3 @@
 /output/doc/*.html
 /schema/*.xml
+/derby.log
