@@ -14,7 +14,7 @@
 
 	<properties>
 		<dbflute.version>1.2.6</dbflute.version>
-		<derby.jdbc.version>10.11.1.1</derby.jdbc.version>
+		<derby.jdbc.version>10.14.2.0</derby.jdbc.version>
 		<slf4j.version>1.6.1</slf4j.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<utflute.version>0.9.5</utflute.version>
