@@ -10,35 +10,7 @@ import org.docksidestage.derby.dbflute.exbhv.*;
 import org.docksidestage.derby.dbflute.exentity.*;
 
 /**
- * The referrer loader of MEMBER_SECURITY as TABLE. <br>
- * <pre>
- * [primary key]
- *     MEMBER_ID
- *
- * [column]
- *     MEMBER_ID, LOGIN_PASSWORD, REMINDER_QUESTION, REMINDER_ANSWER, REMINDER_USE_COUNT, REGISTER_DATETIME, REGISTER_USER, UPDATE_DATETIME, UPDATE_USER, VERSION_NO
- *
- * [sequence]
- *     
- *
- * [identity]
- *     
- *
- * [version-no]
- *     VERSION_NO
- *
- * [foreign table]
- *     MEMBER
- *
- * [referrer table]
- *     
- *
- * [foreign property]
- *     member
- *
- * [referrer property]
- *     
- * </pre>
+ * The referrer loader of MEMBER_SECURITY as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public class LoaderOfMemberSecurity {

@@ -15,47 +15,7 @@ import org.docksidestage.derby.dbflute.allcommon.DBMetaInstanceHandler;
 import org.docksidestage.derby.dbflute.exentity.*;
 
 /**
- * The entity of MEMBER_FOLLOWING as TABLE. <br>
- * <pre>
- * [primary-key]
- *     MEMBER_FOLLOWING_ID
- *
- * [column]
- *     MEMBER_FOLLOWING_ID, MY_MEMBER_ID, YOUR_MEMBER_ID, FOLLOW_DATETIME
- *
- * [sequence]
- *     
- *
- * [identity]
- *     MEMBER_FOLLOWING_ID
- *
- * [version-no]
- *     
- *
- * [foreign table]
- *     MEMBER
- *
- * [referrer table]
- *     
- *
- * [foreign property]
- *     memberByMyMemberId, memberByYourMemberId
- *
- * [referrer property]
- *     
- *
- * [get/set template]
- * /= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
- * Long memberFollowingId = entity.getMemberFollowingId();
- * Integer myMemberId = entity.getMyMemberId();
- * Integer yourMemberId = entity.getYourMemberId();
- * java.time.LocalDateTime followDatetime = entity.getFollowDatetime();
- * entity.setMemberFollowingId(memberFollowingId);
- * entity.setMyMemberId(myMemberId);
- * entity.setYourMemberId(yourMemberId);
- * entity.setFollowDatetime(followDatetime);
- * = = = = = = = = = =/
- * </pre>
+ * The entity of MEMBER_FOLLOWING as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsMemberFollowing extends AbstractEntity implements DomainEntity {

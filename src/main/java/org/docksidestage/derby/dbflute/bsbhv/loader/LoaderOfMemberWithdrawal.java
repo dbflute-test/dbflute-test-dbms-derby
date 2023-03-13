@@ -10,35 +10,7 @@ import org.docksidestage.derby.dbflute.exbhv.*;
 import org.docksidestage.derby.dbflute.exentity.*;
 
 /**
- * The referrer loader of MEMBER_WITHDRAWAL as TABLE. <br>
- * <pre>
- * [primary key]
- *     MEMBER_ID
- *
- * [column]
- *     MEMBER_ID, WITHDRAWAL_REASON_CODE, WITHDRAWAL_REASON_INPUT_TEXT, WITHDRAWAL_DATETIME, REGISTER_DATETIME, REGISTER_USER, UPDATE_DATETIME, UPDATE_USER, VERSION_NO
- *
- * [sequence]
- *     
- *
- * [identity]
- *     
- *
- * [version-no]
- *     VERSION_NO
- *
- * [foreign table]
- *     MEMBER, WITHDRAWAL_REASON
- *
- * [referrer table]
- *     
- *
- * [foreign property]
- *     member, withdrawalReason
- *
- * [referrer property]
- *     
- * </pre>
+ * The referrer loader of MEMBER_WITHDRAWAL as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public class LoaderOfMemberWithdrawal {

@@ -12,35 +12,7 @@ import org.docksidestage.derby.dbflute.exentity.*;
 import org.docksidestage.derby.dbflute.cbean.*;
 
 /**
- * The referrer loader of REGION as TABLE. <br>
- * <pre>
- * [primary key]
- *     REGION_ID
- *
- * [column]
- *     REGION_ID, REGION_NAME
- *
- * [sequence]
- *     
- *
- * [identity]
- *     
- *
- * [version-no]
- *     
- *
- * [foreign table]
- *     
- *
- * [referrer table]
- *     MEMBER_ADDRESS
- *
- * [foreign property]
- *     
- *
- * [referrer property]
- *     memberAddressList
- * </pre>
+ * The referrer loader of REGION as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public class LoaderOfRegion {

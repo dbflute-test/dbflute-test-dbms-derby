@@ -17,63 +17,7 @@ import org.docksidestage.derby.dbflute.allcommon.CDef;
 import org.docksidestage.derby.dbflute.exentity.*;
 
 /**
- * The entity of PURCHASE as TABLE. <br>
- * <pre>
- * [primary-key]
- *     PURCHASE_ID
- *
- * [column]
- *     PURCHASE_ID, MEMBER_ID, PRODUCT_ID, PURCHASE_DATETIME, PURCHASE_COUNT, PURCHASE_PRICE, PAYMENT_COMPLETE_FLG, REGISTER_DATETIME, REGISTER_USER, UPDATE_DATETIME, UPDATE_USER, VERSION_NO
- *
- * [sequence]
- *     
- *
- * [identity]
- *     PURCHASE_ID
- *
- * [version-no]
- *     VERSION_NO
- *
- * [foreign table]
- *     MEMBER, PRODUCT
- *
- * [referrer table]
- *     
- *
- * [foreign property]
- *     member, product
- *
- * [referrer property]
- *     
- *
- * [get/set template]
- * /= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
- * Long purchaseId = entity.getPurchaseId();
- * Integer memberId = entity.getMemberId();
- * Integer productId = entity.getProductId();
- * java.time.LocalDateTime purchaseDatetime = entity.getPurchaseDatetime();
- * Integer purchaseCount = entity.getPurchaseCount();
- * Integer purchasePrice = entity.getPurchasePrice();
- * Integer paymentCompleteFlg = entity.getPaymentCompleteFlg();
- * java.time.LocalDateTime registerDatetime = entity.getRegisterDatetime();
- * String registerUser = entity.getRegisterUser();
- * java.time.LocalDateTime updateDatetime = entity.getUpdateDatetime();
- * String updateUser = entity.getUpdateUser();
- * Long versionNo = entity.getVersionNo();
- * entity.setPurchaseId(purchaseId);
- * entity.setMemberId(memberId);
- * entity.setProductId(productId);
- * entity.setPurchaseDatetime(purchaseDatetime);
- * entity.setPurchaseCount(purchaseCount);
- * entity.setPurchasePrice(purchasePrice);
- * entity.setPaymentCompleteFlg(paymentCompleteFlg);
- * entity.setRegisterDatetime(registerDatetime);
- * entity.setRegisterUser(registerUser);
- * entity.setUpdateDatetime(updateDatetime);
- * entity.setUpdateUser(updateUser);
- * entity.setVersionNo(versionNo);
- * = = = = = = = = = =/
- * </pre>
+ * The entity of PURCHASE as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsPurchase extends AbstractEntity implements DomainEntity, EntityDefinedCommonColumn {

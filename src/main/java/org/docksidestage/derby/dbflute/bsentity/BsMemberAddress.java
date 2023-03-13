@@ -17,61 +17,7 @@ import org.docksidestage.derby.dbflute.allcommon.CDef;
 import org.docksidestage.derby.dbflute.exentity.*;
 
 /**
- * The entity of MEMBER_ADDRESS as TABLE. <br>
- * <pre>
- * [primary-key]
- *     MEMBER_ADDRESS_ID
- *
- * [column]
- *     MEMBER_ADDRESS_ID, MEMBER_ID, VALID_BEGIN_DATE, VALID_END_DATE, ADDRESS, REGION_ID, REGISTER_DATETIME, REGISTER_USER, UPDATE_DATETIME, UPDATE_USER, VERSION_NO
- *
- * [sequence]
- *     
- *
- * [identity]
- *     MEMBER_ADDRESS_ID
- *
- * [version-no]
- *     VERSION_NO
- *
- * [foreign table]
- *     MEMBER, REGION
- *
- * [referrer table]
- *     
- *
- * [foreign property]
- *     member, region
- *
- * [referrer property]
- *     
- *
- * [get/set template]
- * /= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
- * Integer memberAddressId = entity.getMemberAddressId();
- * Integer memberId = entity.getMemberId();
- * java.time.LocalDate validBeginDate = entity.getValidBeginDate();
- * java.time.LocalDate validEndDate = entity.getValidEndDate();
- * String address = entity.getAddress();
- * Integer regionId = entity.getRegionId();
- * java.time.LocalDateTime registerDatetime = entity.getRegisterDatetime();
- * String registerUser = entity.getRegisterUser();
- * java.time.LocalDateTime updateDatetime = entity.getUpdateDatetime();
- * String updateUser = entity.getUpdateUser();
- * Long versionNo = entity.getVersionNo();
- * entity.setMemberAddressId(memberAddressId);
- * entity.setMemberId(memberId);
- * entity.setValidBeginDate(validBeginDate);
- * entity.setValidEndDate(validEndDate);
- * entity.setAddress(address);
- * entity.setRegionId(regionId);
- * entity.setRegisterDatetime(registerDatetime);
- * entity.setRegisterUser(registerUser);
- * entity.setUpdateDatetime(updateDatetime);
- * entity.setUpdateUser(updateUser);
- * entity.setVersionNo(versionNo);
- * = = = = = = = = = =/
- * </pre>
+ * The entity of MEMBER_ADDRESS as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsMemberAddress extends AbstractEntity implements DomainEntity, EntityDefinedCommonColumn {

@@ -10,35 +10,7 @@ import org.docksidestage.derby.dbflute.exbhv.*;
 import org.docksidestage.derby.dbflute.exentity.*;
 
 /**
- * The referrer loader of MEMBER_LOGIN as TABLE. <br>
- * <pre>
- * [primary key]
- *     MEMBER_LOGIN_ID
- *
- * [column]
- *     MEMBER_LOGIN_ID, MEMBER_ID, LOGIN_DATETIME, MOBILE_LOGIN_FLG, LOGIN_MEMBER_STATUS_CODE
- *
- * [sequence]
- *     
- *
- * [identity]
- *     MEMBER_LOGIN_ID
- *
- * [version-no]
- *     
- *
- * [foreign table]
- *     MEMBER_STATUS, MEMBER
- *
- * [referrer table]
- *     
- *
- * [foreign property]
- *     memberStatus, member
- *
- * [referrer property]
- *     
- * </pre>
+ * The referrer loader of MEMBER_LOGIN as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public class LoaderOfMemberLogin {

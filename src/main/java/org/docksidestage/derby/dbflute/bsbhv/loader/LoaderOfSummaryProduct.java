@@ -10,35 +10,7 @@ import org.docksidestage.derby.dbflute.exbhv.*;
 import org.docksidestage.derby.dbflute.exentity.*;
 
 /**
- * The referrer loader of SUMMARY_PRODUCT as VIEW. <br>
- * <pre>
- * [primary key]
- *     PRODUCT_ID
- *
- * [column]
- *     PRODUCT_ID, PRODUCT_NAME, PRODUCT_STATUS_CODE, LATEST_PURCHASE_DATETIME
- *
- * [sequence]
- *     
- *
- * [identity]
- *     
- *
- * [version-no]
- *     
- *
- * [foreign table]
- *     PRODUCT_STATUS
- *
- * [referrer table]
- *     
- *
- * [foreign property]
- *     productStatus
- *
- * [referrer property]
- *     
- * </pre>
+ * The referrer loader of SUMMARY_PRODUCT as VIEW.
  * @author DBFlute(AutoGenerator)
  */
 public class LoaderOfSummaryProduct {

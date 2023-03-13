@@ -14,51 +14,7 @@ import org.docksidestage.derby.dbflute.allcommon.CDef;
 import org.docksidestage.derby.dbflute.exentity.*;
 
 /**
- * The entity of SERVICE_RANK as TABLE. <br>
- * <pre>
- * [primary-key]
- *     SERVICE_RANK_CODE
- *
- * [column]
- *     SERVICE_RANK_CODE, SERVICE_RANK_NAME, SERVICE_POINT_INCIDENCE, NEW_ACCEPTABLE_FLG, DESCRIPTION, DISPLAY_ORDER
- *
- * [sequence]
- *     
- *
- * [identity]
- *     
- *
- * [version-no]
- *     
- *
- * [foreign table]
- *     
- *
- * [referrer table]
- *     MEMBER_SERVICE
- *
- * [foreign property]
- *     
- *
- * [referrer property]
- *     memberServiceList
- *
- * [get/set template]
- * /= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
- * String serviceRankCode = entity.getServiceRankCode();
- * String serviceRankName = entity.getServiceRankName();
- * java.math.BigDecimal servicePointIncidence = entity.getServicePointIncidence();
- * Integer newAcceptableFlg = entity.getNewAcceptableFlg();
- * String description = entity.getDescription();
- * Integer displayOrder = entity.getDisplayOrder();
- * entity.setServiceRankCode(serviceRankCode);
- * entity.setServiceRankName(serviceRankName);
- * entity.setServicePointIncidence(servicePointIncidence);
- * entity.setNewAcceptableFlg(newAcceptableFlg);
- * entity.setDescription(description);
- * entity.setDisplayOrder(displayOrder);
- * = = = = = = = = = =/
- * </pre>
+ * The entity of SERVICE_RANK as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsServiceRank extends AbstractEntity implements DomainEntity {

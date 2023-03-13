@@ -10,35 +10,7 @@ import org.docksidestage.derby.dbflute.exbhv.*;
 import org.docksidestage.derby.dbflute.exentity.*;
 
 /**
- * The referrer loader of PURCHASE as TABLE. <br>
- * <pre>
- * [primary key]
- *     PURCHASE_ID
- *
- * [column]
- *     PURCHASE_ID, MEMBER_ID, PRODUCT_ID, PURCHASE_DATETIME, PURCHASE_COUNT, PURCHASE_PRICE, PAYMENT_COMPLETE_FLG, REGISTER_DATETIME, REGISTER_USER, UPDATE_DATETIME, UPDATE_USER, VERSION_NO
- *
- * [sequence]
- *     
- *
- * [identity]
- *     PURCHASE_ID
- *
- * [version-no]
- *     VERSION_NO
- *
- * [foreign table]
- *     MEMBER, PRODUCT
- *
- * [referrer table]
- *     
- *
- * [foreign property]
- *     member, product
- *
- * [referrer property]
- *     
- * </pre>
+ * The referrer loader of PURCHASE as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public class LoaderOfPurchase {

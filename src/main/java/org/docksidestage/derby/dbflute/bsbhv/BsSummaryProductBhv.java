@@ -23,35 +23,7 @@ import org.docksidestage.derby.dbflute.bsentity.dbmeta.*;
 import org.docksidestage.derby.dbflute.cbean.*;
 
 /**
- * The behavior of SUMMARY_PRODUCT as VIEW. <br>
- * <pre>
- * [primary key]
- *     PRODUCT_ID
- *
- * [column]
- *     PRODUCT_ID, PRODUCT_NAME, PRODUCT_STATUS_CODE, LATEST_PURCHASE_DATETIME
- *
- * [sequence]
- *     
- *
- * [identity]
- *     
- *
- * [version-no]
- *     
- *
- * [foreign table]
- *     PRODUCT_STATUS
- *
- * [referrer table]
- *     
- *
- * [foreign property]
- *     productStatus
- *
- * [referrer property]
- *     
- * </pre>
+ * The behavior of SUMMARY_PRODUCT as VIEW.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsSummaryProductBhv extends AbstractBehaviorWritable<SummaryProduct, SummaryProductCB> {
@@ -598,7 +570,7 @@ public abstract class BsSummaryProductBhv extends AbstractBehaviorWritable<Summa
     /**
      * Delete the several entities by query. (NonExclusiveControl)
      * <pre>
-     * <span style="color: #0000C0">summaryProductBhv</span>.<span style="color: #CC4747">queryDelete</span>(summaryProduct, <span style="color: #553000">cb</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
+     * <span style="color: #0000C0">summaryProductBhv</span>.<span style="color: #CC4747">queryDelete</span>(<span style="color: #553000">cb</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">cb</span>.query().setFoo...
      * });
      * </pre>

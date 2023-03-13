@@ -23,35 +23,7 @@ import org.docksidestage.derby.dbflute.bsentity.dbmeta.*;
 import org.docksidestage.derby.dbflute.cbean.*;
 
 /**
- * The behavior of MEMBER_FOLLOWING as TABLE. <br>
- * <pre>
- * [primary key]
- *     MEMBER_FOLLOWING_ID
- *
- * [column]
- *     MEMBER_FOLLOWING_ID, MY_MEMBER_ID, YOUR_MEMBER_ID, FOLLOW_DATETIME
- *
- * [sequence]
- *     
- *
- * [identity]
- *     MEMBER_FOLLOWING_ID
- *
- * [version-no]
- *     
- *
- * [foreign table]
- *     MEMBER
- *
- * [referrer table]
- *     
- *
- * [foreign property]
- *     memberByMyMemberId, memberByYourMemberId
- *
- * [referrer property]
- *     
- * </pre>
+ * The behavior of MEMBER_FOLLOWING as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsMemberFollowingBhv extends AbstractBehaviorWritable<MemberFollowing, MemberFollowingCB> {
@@ -632,7 +604,7 @@ public abstract class BsMemberFollowingBhv extends AbstractBehaviorWritable<Memb
     /**
      * Delete the several entities by query. (NonExclusiveControl)
      * <pre>
-     * <span style="color: #0000C0">memberFollowingBhv</span>.<span style="color: #CC4747">queryDelete</span>(memberFollowing, <span style="color: #553000">cb</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
+     * <span style="color: #0000C0">memberFollowingBhv</span>.<span style="color: #CC4747">queryDelete</span>(<span style="color: #553000">cb</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">cb</span>.query().setFoo...
      * });
      * </pre>

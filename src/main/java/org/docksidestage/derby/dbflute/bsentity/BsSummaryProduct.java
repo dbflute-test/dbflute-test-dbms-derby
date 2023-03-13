@@ -16,47 +16,7 @@ import org.docksidestage.derby.dbflute.allcommon.CDef;
 import org.docksidestage.derby.dbflute.exentity.*;
 
 /**
- * The entity of SUMMARY_PRODUCT as VIEW. <br>
- * <pre>
- * [primary-key]
- *     PRODUCT_ID
- *
- * [column]
- *     PRODUCT_ID, PRODUCT_NAME, PRODUCT_STATUS_CODE, LATEST_PURCHASE_DATETIME
- *
- * [sequence]
- *     
- *
- * [identity]
- *     
- *
- * [version-no]
- *     
- *
- * [foreign table]
- *     PRODUCT_STATUS
- *
- * [referrer table]
- *     
- *
- * [foreign property]
- *     productStatus
- *
- * [referrer property]
- *     
- *
- * [get/set template]
- * /= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
- * Integer productId = entity.getProductId();
- * String productName = entity.getProductName();
- * String productStatusCode = entity.getProductStatusCode();
- * java.time.LocalDateTime latestPurchaseDatetime = entity.getLatestPurchaseDatetime();
- * entity.setProductId(productId);
- * entity.setProductName(productName);
- * entity.setProductStatusCode(productStatusCode);
- * entity.setLatestPurchaseDatetime(latestPurchaseDatetime);
- * = = = = = = = = = =/
- * </pre>
+ * The entity of SUMMARY_PRODUCT as VIEW.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsSummaryProduct extends AbstractEntity implements DomainEntity {

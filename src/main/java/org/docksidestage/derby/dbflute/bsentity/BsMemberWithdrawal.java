@@ -17,57 +17,7 @@ import org.docksidestage.derby.dbflute.allcommon.CDef;
 import org.docksidestage.derby.dbflute.exentity.*;
 
 /**
- * The entity of MEMBER_WITHDRAWAL as TABLE. <br>
- * <pre>
- * [primary-key]
- *     MEMBER_ID
- *
- * [column]
- *     MEMBER_ID, WITHDRAWAL_REASON_CODE, WITHDRAWAL_REASON_INPUT_TEXT, WITHDRAWAL_DATETIME, REGISTER_DATETIME, REGISTER_USER, UPDATE_DATETIME, UPDATE_USER, VERSION_NO
- *
- * [sequence]
- *     
- *
- * [identity]
- *     
- *
- * [version-no]
- *     VERSION_NO
- *
- * [foreign table]
- *     MEMBER, WITHDRAWAL_REASON
- *
- * [referrer table]
- *     
- *
- * [foreign property]
- *     member, withdrawalReason
- *
- * [referrer property]
- *     
- *
- * [get/set template]
- * /= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
- * Integer memberId = entity.getMemberId();
- * String withdrawalReasonCode = entity.getWithdrawalReasonCode();
- * String withdrawalReasonInputText = entity.getWithdrawalReasonInputText();
- * java.time.LocalDateTime withdrawalDatetime = entity.getWithdrawalDatetime();
- * java.time.LocalDateTime registerDatetime = entity.getRegisterDatetime();
- * String registerUser = entity.getRegisterUser();
- * java.time.LocalDateTime updateDatetime = entity.getUpdateDatetime();
- * String updateUser = entity.getUpdateUser();
- * Long versionNo = entity.getVersionNo();
- * entity.setMemberId(memberId);
- * entity.setWithdrawalReasonCode(withdrawalReasonCode);
- * entity.setWithdrawalReasonInputText(withdrawalReasonInputText);
- * entity.setWithdrawalDatetime(withdrawalDatetime);
- * entity.setRegisterDatetime(registerDatetime);
- * entity.setRegisterUser(registerUser);
- * entity.setUpdateDatetime(updateDatetime);
- * entity.setUpdateUser(updateUser);
- * entity.setVersionNo(versionNo);
- * = = = = = = = = = =/
- * </pre>
+ * The entity of MEMBER_WITHDRAWAL as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsMemberWithdrawal extends AbstractEntity implements DomainEntity, EntityDefinedCommonColumn {

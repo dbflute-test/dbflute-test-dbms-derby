@@ -24,35 +24,7 @@ import org.docksidestage.derby.dbflute.bsentity.dbmeta.*;
 import org.docksidestage.derby.dbflute.cbean.*;
 
 /**
- * The behavior of REGION as TABLE. <br>
- * <pre>
- * [primary key]
- *     REGION_ID
- *
- * [column]
- *     REGION_ID, REGION_NAME
- *
- * [sequence]
- *     
- *
- * [identity]
- *     
- *
- * [version-no]
- *     
- *
- * [foreign table]
- *     
- *
- * [referrer table]
- *     MEMBER_ADDRESS
- *
- * [foreign property]
- *     
- *
- * [referrer property]
- *     memberAddressList
- * </pre>
+ * The behavior of REGION as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsRegionBhv extends AbstractBehaviorWritable<Region, RegionCB> {
@@ -655,7 +627,7 @@ public abstract class BsRegionBhv extends AbstractBehaviorWritable<Region, Regio
     /**
      * Delete the several entities by query. (NonExclusiveControl)
      * <pre>
-     * <span style="color: #0000C0">regionBhv</span>.<span style="color: #CC4747">queryDelete</span>(region, <span style="color: #553000">cb</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
+     * <span style="color: #0000C0">regionBhv</span>.<span style="color: #CC4747">queryDelete</span>(<span style="color: #553000">cb</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">cb</span>.query().setFoo...
      * });
      * </pre>

@@ -14,45 +14,7 @@ import org.docksidestage.derby.dbflute.allcommon.CDef;
 import org.docksidestage.derby.dbflute.exentity.*;
 
 /**
- * The entity of WITHDRAWAL_REASON as TABLE. <br>
- * <pre>
- * [primary-key]
- *     WITHDRAWAL_REASON_CODE
- *
- * [column]
- *     WITHDRAWAL_REASON_CODE, WITHDRAWAL_REASON_TEXT, DISPLAY_ORDER
- *
- * [sequence]
- *     
- *
- * [identity]
- *     
- *
- * [version-no]
- *     
- *
- * [foreign table]
- *     
- *
- * [referrer table]
- *     MEMBER_WITHDRAWAL
- *
- * [foreign property]
- *     
- *
- * [referrer property]
- *     memberWithdrawalList
- *
- * [get/set template]
- * /= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
- * String withdrawalReasonCode = entity.getWithdrawalReasonCode();
- * String withdrawalReasonText = entity.getWithdrawalReasonText();
- * Integer displayOrder = entity.getDisplayOrder();
- * entity.setWithdrawalReasonCode(withdrawalReasonCode);
- * entity.setWithdrawalReasonText(withdrawalReasonText);
- * entity.setDisplayOrder(displayOrder);
- * = = = = = = = = = =/
- * </pre>
+ * The entity of WITHDRAWAL_REASON as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsWithdrawalReason extends AbstractEntity implements DomainEntity {
