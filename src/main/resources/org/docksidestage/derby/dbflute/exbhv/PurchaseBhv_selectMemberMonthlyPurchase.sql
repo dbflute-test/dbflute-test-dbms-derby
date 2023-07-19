@@ -18,9 +18,12 @@ select mb.MEMBER_ID -- // grouping item
      , max(pur.PURCHASE_PRICE) as PURCHASE_PRICE_MAX -- // me too
      -- non grouping, executable until selecting one-to-many data on Apache Derby
      -- , pur.PURCHASE_COUNT
+     -- , serv.SERVICE_POINT_COUNT -- // non grouping item (relationship 1:1 data) is NOT allowed on Apache Derby
   from PURCHASE pur
     left outer join MEMBER mb
       on pur.MEMBER_ID = mb.MEMBER_ID
+    left outer join MEMBER_SERVICE serv
+      on mb.MEMBER_ID = serv.MEMBER_ID
  /*BEGIN*/
  where
    /*IF pmb.memberId != null*/
