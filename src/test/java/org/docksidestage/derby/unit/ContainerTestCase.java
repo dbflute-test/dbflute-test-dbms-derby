@@ -8,7 +8,7 @@ import org.seasar.junitcdi.core.runner.CDI;
  * @since 1.1.0 (2014/11/10 Monday)
  */
 @RunWith(CDI.class)
-public abstract class ContainerTestCase extends PlainTestCase {
+public abstract class ContainerTestCase extends JUnit4PlainTestCase {
 
     // TODO jflute test: Derby, CDI transaction
     //// ===================================================================================

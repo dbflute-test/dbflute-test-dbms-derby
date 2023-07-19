@@ -64,7 +64,7 @@ import org.slf4j.LoggerFactory;
  * @author jflute
  * @since 0.9.2 (2009/02/18 Wednesday)
  */
-public abstract class PlainTestCase extends Assert {
+public abstract class JUnit4PlainTestCase extends Assert {
 
     // ===================================================================================
     //                                                                          Definition
