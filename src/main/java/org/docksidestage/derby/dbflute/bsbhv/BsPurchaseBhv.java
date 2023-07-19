@@ -32,6 +32,8 @@ public abstract class BsPurchaseBhv extends AbstractBehaviorWritable<Purchase, P
     //                                                                          Definition
     //                                                                          ==========
     /*df:beginQueryPath*/
+    /** Example for group-by on Apache Derby */
+    public static final String PATH_selectMemberMonthlyPurchase = "selectMemberMonthlyPurchase";
     /*df:endQueryPath*/
 
     // ===================================================================================
