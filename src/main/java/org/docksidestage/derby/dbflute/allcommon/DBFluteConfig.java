@@ -13,7 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.dbflute.FunCustodial;
 import org.dbflute.bhv.core.context.mapping.MappingDateTimeZoneProvider;
-import org.dbflute.bhv.core.context.logmask.ErrorLogMaskProvider;
+import org.dbflute.bhv.core.context.logmask.BehaviorLogMaskProvider;
 import org.dbflute.bhv.core.supplement.SequenceCacheKeyGenerator;
 import org.dbflute.cbean.garnish.SpecifyColumnRequiredExceptDeterminer;
 import org.dbflute.cbean.cipher.GearedCipherManager;
@@ -85,7 +85,7 @@ public class DBFluteConfig {
     protected String _logTimestampPattern;
     protected String _logTimePattern;
     protected BoundDateDisplayTimeZoneProvider _logTimeZoneProvider;
-    protected ErrorLogMaskProvider _errorLogMaskProvider; // since 1.2.7
+    protected BehaviorLogMaskProvider _behaviorLogMaskProvider; // since 1.2.7
 
     // environment
     protected StatementConfig _defaultStatementConfig;
@@ -547,18 +547,18 @@ public class DBFluteConfig {
     }
 
     // ===================================================================================
-    //                                                                      Error Log Mask
-    //                                                                      ==============
-    public ErrorLogMaskProvider getErrorLogMaskProvider() { // since 1.2.7
-        return _errorLogMaskProvider;
+    //                                                                   Behavior Log Mask
+    //                                                                   =================
+    public BehaviorLogMaskProvider getBehaviorLogMaskProvider() { // since 1.2.7
+        return _behaviorLogMaskProvider;
     }
 
-    public void setErrorLogMaskProvider(ErrorLogMaskProvider errorLogMaskProvider) {
+    public void setBehaviorLogMaskProvider(BehaviorLogMaskProvider behaviorLogMaskProvider) {
         assertUnlocked();
         if (_log.isInfoEnabled()) {
-            _log.info("...Setting errorLogMaskProvider: " + errorLogMaskProvider);
+            _log.info("...Setting behaviorLogMaskProvider: " + behaviorLogMaskProvider);
         }
-        _errorLogMaskProvider = errorLogMaskProvider;
+        _behaviorLogMaskProvider = behaviorLogMaskProvider;
     }
 
     // ===================================================================================
